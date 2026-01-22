@@ -67,7 +67,7 @@ sub_folder = "better_embeddings"
 # Save vector stores locally
 for i, wrapper in enumerate(vectorstore_wrappers):
 
-    if i == 0:
+    if i != 2:
         continue
 
     if (sub_folder != ""):
