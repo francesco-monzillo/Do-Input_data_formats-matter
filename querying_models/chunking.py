@@ -364,22 +364,30 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
 
             dimension = text[0: text.find("###")]
 
+            metrics = text.split("### ")
+
             print(dimension)
 
-            text = "dimension: " + text[0: len(dimension)].trim() + "(score). Metrics involved:"# + text[len(dimension):]
+            text = "dimension: " + text[0: len(dimension)].strip() + "(score). Metrics involved: "# + text[len(dimension):]
 
             # name of dimension string
-
-            metrics = text.split("### ")
 
             # Remove first section, which is not a metric
             metrics = metrics[1:]
 
+            #print(metrics)
+
             to_add_text = ""
 
-            for metric in metrics:
+            for i, metric in enumerate(metrics):
+
+                if (i == 0):
+                    comma = ""
+                else:
+                    comma = ", "
+
                 metric = metric[0: metric.find("- **")]
-                to_add_text += str(metric)
+                to_add_text += comma + str(metric)
 
             
             text = text + to_add_text
