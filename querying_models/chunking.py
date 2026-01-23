@@ -324,7 +324,17 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
 
             text = text.replace("Metric;   ex:InputToCompute", "; dimension: " + value + " (score); ex:InputToCompute")
 
-            text =  "Metric: " + text[0: text.find("; dimension:")-1] + "; dimension: " + value + " (score)"
+            text =  "Metric: " + text[0: text.find("; dimension:")-1] + "; dimension: " + value + " (score)."
+
+        m = re.search("a dqv:Dimension;", text)
+
+        if m:
+            print("Dimension chunk found.")
+
+            dim_beginning, dim_end = text.find("\""), text.rfind("\"")
+
+            text = text[dim_beginning + 1: dim_end] + " is a dimension in this dataset."
+
 
 
         text = text.replace("a dqv", "").replace('<http://www.w3.org/2004/02/skos/core#prefLabel>', 'description: ').replace("<http://example.org/Quality_Dimension/", "").replace('<http://example.org/dataset/','Dataset: ').replace("<http://example.org/Quality-Metric/", "").replace('<http://example.org/measurement/','Measurement: ').replace('dqv:inCategory', 'Inside Category: ').replace('a dqv:', '').replace('dqv:', '').replace('prov:', '').replace('%20', ' ').replace('<','').replace('>','').replace('%28', '(').replace('%29', ')').replace('http://example.org/Quality-Category/', 'Category: ').replace('ex:','').replace('@en','').replace(";    .",".")
