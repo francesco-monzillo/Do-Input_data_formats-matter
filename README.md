@@ -16,6 +16,14 @@ The Jupyter notebook `run_benchmark.ipynb` allows the regeneration of all output
 
 ---
 
+### Building Hypergraphs from our CSVs of interest
+
+The code and data used to generate our 5 hypergraphs (4-uniform, Time-labeled, Measure-labeled, KG-labeled, Value-labeled) are available in the following directory:
+
+`./hypergraphs_extraction`
+
+Documentation and all the weekly quality assessment data can be found in `./hypergraphs_extraction/documentation` and `./hypergraphs_extraction/Weekly_Data`, respectively 
+
 ### Human Evaluation Results
 
 The directory:
