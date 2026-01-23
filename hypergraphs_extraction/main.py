@@ -238,11 +238,6 @@ def process_file_unique_hypergraph(file_paths, metrics_for_each_dataset, stop = 
                 if(stop == 0 or count < stop):
                     filename = os.path.basename(file_path)
 
-                    #Building Hypergraph based on these timestamps
-                    if not (filename == "2025-09-07.csv" or filename == "2025-08-03.csv" or filename == "2025-07-13.csv" or filename == "2025-06-01.csv" or filename == "2025-05-04.csv"):
-                        skipped = True
-                        continue
-
                     #Check if at least one row will be processed
                     flag = False
                 
@@ -451,7 +446,7 @@ if __name__ == "__main__":
     for i, hypergraph in enumerate(H_list):
         if(i == 0):
             #xgi.write_hif(hypergraph, "../generated_hypergraphs_json/test_normal_hypergraph.json")
-            gen_hypegraph_json(hypergraph, "normal", "../generated_hypergraphs_json/" + documentation_path + "/test_normal_hypergraph.json")
+            gen_hypegraph_json(hypergraph, "normal", "../generated_hypergraphs_json/" + documentation_path + "/test_4_uniform_hypergraph.json")
         elif(i == 1):
             #xgi.write_hif(hypergraph, "../generated_hypergraphs_json/test_time_labeled_hypergraph.json")
             gen_hypegraph_json(hypergraph, "time_labeled", "../generated_hypergraphs_json/" + documentation_path + "/test_time_labeled_hypergraph.json")
@@ -463,4 +458,4 @@ if __name__ == "__main__":
             gen_hypegraph_json(hypergraph, "kg_labeled", "../generated_hypergraphs_json/" + documentation_path + "/test_kg_labeled_hypergraph.json")
         elif(i == 4):
             #xgi.write_hif(hypergraph, "../generated_hypergraphs_json/test_measure_value_labeled_hypergraph.json")
-            gen_hypegraph_json(hypergraph, "measure_value_labeled", "../generated_hypergraphs_json/" + documentation_path + "/test_measure_value_labeled_hypergraph.json")
+            gen_hypegraph_json(hypergraph, "measure_value_labeled", "../generated_hypergraphs_json/" + documentation_path + "/test_value_labeled_hypergraph.json")

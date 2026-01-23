@@ -2,4 +2,6 @@ querying_models/RELEVANT_CHUNKS_FOR_EACH_QUESTION/
 querying_models/responses/
 querying_models/__pycache__/
 querying_models/responses/
+hypergraphs_extraction/__pycache__/
+hypergraphs_extraction/metrics_cathegorized_by_dimensions.py
 literature_characterization

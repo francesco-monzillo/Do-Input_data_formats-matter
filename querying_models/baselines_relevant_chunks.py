@@ -67,9 +67,6 @@ sub_folder = "better_embeddings"
 # Save vector stores locally
 for i, wrapper in enumerate(vectorstore_wrappers):
 
-    #if i != 2:
-    #    continue
-
     if (sub_folder != ""):
         vectorstore_wrappers[i] = chunking.buildVectorStoreObject(chunks_for_each_repr[i], embeddings= "GEMINI", maximum_tokens_for_embedding_request = 30000, Structure = i, CSV = True if i == 0 else False, KG = True if i == 1 else False, Metadata = True if i == 2 else False)
     else:
@@ -133,9 +130,6 @@ with open("./questions/questions.tsv", "r") as f:
 
                 for i, representation in enumerate(representations_list):
                     good_ending = False
-
-                    #if(i != 2):
-                    #    continue
 
                     while not good_ending:
                         try:
