@@ -136,6 +136,8 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
     if CSV == False and KG == False and METADATA == False and Structure != None:
 
         try:
+            #print(text[:150])
+
             if Structure == 0:
 
                 text_list = ast.literal_eval(text)
@@ -157,9 +159,9 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
                         del text_list["dimension"]
 
                         if("score" not in text_dict_label):
-                            text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score))": text_list}
+                            text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score)) in the dataset": text_list}
                         else:
-                            text = {"dimension/score: " + text_dict_label : text_list}
+                            text = {"dimension (in the dataset): " + text_dict_label : text_list}
 
                         print(text)
                     
@@ -183,9 +185,9 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
                     del text_list["dimension"]
 
                     if("score" not in text_dict_label):
-                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score))": text_list}
+                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score)) in the dataset": text_list}
                     else:
-                        text = {"dimension/score: " + text_dict_label : text_list}
+                        text = {"dimension (in the dataset): " + text_dict_label : text_list}
                         
                     print(text)
                     return [str(text)]
@@ -213,9 +215,9 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
                     del text_list["dimension"]
 
                     if("score" not in text_dict_label):
-                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score))": text_list}
+                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score)) in the dataset": text_list}
                     else:
-                        text = {"dimension/score: " + text_dict_label : text_list}
+                        text = {"dimension (in the dataset): " + text_dict_label : text_list}
 
                     print(text)
                     return [str(text)]
@@ -243,9 +245,9 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
                     del text_list["dimension"]
 
                     if("score" not in text_dict_label):
-                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score))": text_list}
+                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score)) in the dataset": text_list}
                     else:
-                        text = {"dimension/score: " + text_dict_label : text_list}
+                        text = {"dimension (in the dataset): " + text_dict_label : text_list}
 
                     print(text)
                     return [str(text)]
@@ -273,9 +275,9 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
                     del text_list["dimension"]
 
                     if("score" not in text_dict_label):
-                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score))": text_list}
+                        text = {"Metric: " + text_dict_label + " (dimension: " + dim_value + " (score)) in the dataset": text_list}
                     else:
-                        text = {"dimension/score: " + text_dict_label : text_list}
+                        text = {"dimension (in the dataset): " + text_dict_label : text_list}
 
                     print(text)
                     return [str(text)]
@@ -287,7 +289,7 @@ def return_chunks_elements(text, Structure = -1, CSV = False, KG = False, METADA
 
                 return [str(final_chunk)]
         except Exception as e:
-            print(f" ERROR while reformatting chunk for structure {Structure}. You can simply ignore this message if the chunks are not structured. Exception: {type(e)}")
+            #print(f" ERROR while reformatting chunk for structure {Structure}. You can simply ignore this message if the chunks are not structured. Exception: {type(e)}")
 
             return [text]
         

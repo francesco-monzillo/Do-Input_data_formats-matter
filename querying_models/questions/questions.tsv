@@ -10,7 +10,7 @@ TA_2.	Is the SPARQL endpoint of DBLP always available?	Is the DBLP SPARQL endpoi
 TA_3.   Is the data dump of the Allie Abbreviation And Long Form dataset always set to 1 in the observed period?	Is the data dump of the Allie Abbreviation And Long Form dataset always up?	No, it is discontinuous
 TA_4.	Is the accuracy of NoiPA constant over time?	Does the accuracy of NoiPA remain consistent over time?	No
 TA_5.	What is the longest continuous period in which the Allie Abbreviation And Long Form dataset data dump has been equals to 1?	For how long, without interruption, has the Allie Abbreviation And Long Form dataset data dump remained up?	91 days
-Co_1.	Which dataset has the highest number of triples?	Which is the biggest dataset among the compared ones?	DBLP
+#Co_1.	Which dataset has the highest number of triples?	Which is the biggest dataset among the compared ones?	DBLP
 Co_2.	Which is the dataset performing worst in the license metric?	Which is the worst performing dataset in the license metric?	CIDOC-CRM
 Co_3.	What is the mean score for the accuracy dimension? 	What is the mean value of the accuracy dimension?	0.50
 Co_4.	What is the best observed score in the Verifiability dimension?	What is the highest observed Verifiability score?	0.4983 (NoiPA, Allie, Bathing Water Quality)
