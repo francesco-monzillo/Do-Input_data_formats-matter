@@ -1,0 +1,22 @@
+Task,N,Fleiss Kappa,Krippendorff Alpha,Avg Pairwise Kappa,Std Pairwise Kappa,Avg Pct Agreement,Std Pct Agreement
+CSV data|JSON doc,40,15.22,16.20,5.33,9.37,96.7%,2.9%
+KG data|Embedded doc,40,14.01,15.21,14.01,0.25,91.7%,1.4%
+Unstructured data|Unstructured doc,40,15.34,15.58,5.33,9.37,96.7%,2.9%
+Time labeled hypergraph,40,13.49,14.53,4.45,8.14,91.7%,3.8%
+Metric labeled hypergraph,40,13.06,14.41,13.05,1.58,88.3%,6.3%
+KG labeled hypergraph,40,14.54,15.12,14.55,0.51,95.0%,2.5%
+Value labeled hypergraph,40,12.42,14.26,12.46,3.23,91.7%,7.2%
+4-uniform hypergraph,40,15.21,16.18,5.33,9.37,96.7%,2.9%
+,,,,,,,
+,,,,,,,
+Overall Agreement Metrics:,,,,,,,
+Fleiss' Kappa:              0.867,,,,,,,
+Krippendorff's Alpha:       0.928,,,,,,,
+Average Pairwise Kappa:     0.866 ± 0.051 (std across pairs),,,,,,,
+Average Percent Agreement:  93.5% ± 2.4% (std across pairs),,,,,,,
+,,,,,,,
+Variability Across Tasks:,,,,,,,
+Fleiss' Kappa (mean ± std):           0.861 ± 0.066,,,,,,,
+Krippendorff's Alpha (mean ± std):    0.924 ± 0.044,,,,,,,
+Avg Pairwise Kappa (mean ± std):      0.572 ± 0.271,,,,,,,
+Avg Pct Agreement (mean ± std):       93.5% ± 3.1%,,,,,,,

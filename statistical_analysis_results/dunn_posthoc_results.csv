@@ -1,0 +1,9 @@
+,4_uniform_hyp,csv_data_json_doc,kg_data_embedded_doc,kg_labeled_hyp,metric_labeled_hyp,time_labeled_hyp,unstructured_data_unstructured_doc,value_labeled_hyp
+4_uniform_hyp,1.0,0.7084713921998831,1.0,1.0,1.0,1.0,1.0,1.0
+csv_data_json_doc,0.7084713921998831,1.0,1.0,0.30346396326679537,0.26879238765303803,1.0,1.0,0.9745410379033382
+kg_data_embedded_doc,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+kg_labeled_hyp,1.0,0.30346396326679537,1.0,1.0,1.0,1.0,0.6350170106979529,1.0
+metric_labeled_hyp,1.0,0.26879238765303803,1.0,1.0,1.0,1.0,0.5682727392802684,1.0
+time_labeled_hyp,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+unstructured_data_unstructured_doc,1.0,1.0,1.0,0.6350170106979529,0.5682727392802684,1.0,1.0,1.0
+value_labeled_hyp,1.0,0.9745410379033382,1.0,1.0,1.0,1.0,1.0,1.0

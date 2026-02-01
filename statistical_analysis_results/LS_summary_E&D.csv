@@ -1,0 +1,8 @@
+LLM,4_uniform_hyp,csv_data_json_doc,kg_data_embedded_doc,kg_labeled_hyp,metric_labeled_hyp,time_labeled_hyp,unstructured_data_unstructured_doc,value_labeled_hyp
+command-R,0.5,0.4,0.3,0.2,0.5,0.3,0.6,0.3
+mistral,0.4,0.4,0.3,0.5,0.6,0.6,0.4,0.7
+DeepSeek-R1T2,0.7,0.4,0.4,0.5,0.4,0.5,0.6,0.4
+gemini-2.5-pro,0.6,0.4,0.2,0.8,0.8,0.8,0.3,0.6
+kimi-k2,0.5,0.4,0.5,0.4,0.25,0.5,0.5,0.6
+llama,0.6,0.6,0.2,0.6,0.75,0.6,0.6,0.6
+gpt-5-mini,0.4,0.3,0.4,0.3,0.3,0.3,0.9,0.4

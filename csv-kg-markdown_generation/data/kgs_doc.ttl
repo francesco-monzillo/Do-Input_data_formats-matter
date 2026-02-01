@@ -1,0 +1,824 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix ex: <http://example.org/vocab/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/Quality-Category/Accessibility> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Accessibility"@en .
+
+<http://example.org/Quality-Category/Contextual> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Contextual"@en .
+
+<http://example.org/Quality-Category/Dataset%20dynamicity> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dataset dynamicity"@en .
+
+<http://example.org/Quality-Category/Intrinsic> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Intrinsic"@en .
+
+<http://example.org/Quality-Category/Representational> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Representational"@en .
+
+<http://example.org/Quality-Category/Trust> a dqv:Category;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Trust"@en .
+
+<http://example.org/Quality-Dimension/Accessibility> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Accessibility"@en .
+
+<http://example.org/Quality-Dimension/Accuracy> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Accuracy"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Intrinsic> .
+
+<http://example.org/Quality-Dimension/Amount%20of%20data> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Amount of data"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Contextual> .
+
+<http://example.org/Quality-Dimension/Availability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Availability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Accessibility> .
+
+<http://example.org/Quality-Dimension/Believability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Believability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Trust> .
+
+<http://example.org/Quality-Dimension/Completeness> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Completeness"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Contextual> .
+
+<http://example.org/Quality-Dimension/Conciseness> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Conciseness"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Intrinsic> .
+
+<http://example.org/Quality-Dimension/Consistency> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Consistency"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Intrinsic> .
+
+<http://example.org/Quality-Dimension/Currency> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Currency"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Dataset%20dynamicity> .
+
+<http://example.org/Quality-Dimension/FAIR> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "FAIR"@en .
+
+<http://example.org/Quality-Dimension/Interlinking> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Interlinking"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Accessibility> .
+
+<http://example.org/Quality-Dimension/Interoperability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Representational> .
+
+<http://example.org/Quality-Dimension/Interpretability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Interpretability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Representational> .
+
+<http://example.org/Quality-Dimension/Licensing> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Licensing"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Accessibility> .
+
+<http://example.org/Quality-Dimension/Performance> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Performance"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Accessibility> .
+
+<http://example.org/Quality-Dimension/Representational%20conciseness> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Representational conciseness"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Representational> .
+
+<http://example.org/Quality-Dimension/Reputation> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Reputation"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Trust> .
+
+<http://example.org/Quality-Dimension/Security> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Security"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Accessibility> .
+
+<http://example.org/Quality-Dimension/Timeliness> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Timeliness"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Dataset%20dynamicity> .
+
+<http://example.org/Quality-Dimension/Understandability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Understandability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Representational> .
+
+<http://example.org/Quality-Dimension/Verifiability> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Verifiability"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Trust> .
+
+<http://example.org/Quality-Dimension/Versatility> a dqv:Dimension;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Versatility"@en;
+  dqv:inCategory <http://example.org/Quality-Category/Representational> .
+
+<http://example.org/Quality-Metric/A%20score> a dqv:Metric;
+  ex:InputToCompute "Accessibility principles scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall Accessibility score computed as a linear combination of all scores of the individual A subprinciples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/A1-D%20Working%20access%20point%28s%29> a dqv:Metric;
+  ex:InputToCompute "Data"@en;
+  ex:MetricOutput "1: operational SPARQL or accessible data dump; 0.5: accessible SPARQL endpoint or data dump; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Working access point(s)"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/A1-M%20Metadata%20availability%20via%20working%20primary%20sources>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: sources discovered in F2a-M woek and contain metadata; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Working primary sources with metadata"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/A1.2%20Authentication%20%26%20HTTPS%20support>
+  a dqv:Metric;
+  ex:InputToCompute "(Meta)data"@en;
+  ex:MetricOutput "1: security requirements can be discovered via SPARQL; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Authentication & HTTPS support"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/A2-M%20Registered%20in%20search%20engines> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: dataset registered in any search engine; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Registered in search engines"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/Accuracy%20score> a dqv:Metric;
+  ex:InputToCompute "Accuracy metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the accuracy dimension computed as a linear combination of the individual accuracy metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/Age%20of%20data> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "-: if the creation date can't be recovered; integer: if the creation date is correctly recovered"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "current time - created time"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Currency> .
+
+<http://example.org/Quality-Metric/Amount%20of%20data%20score> a dqv:Metric;
+  ex:InputToCompute "Amount of data metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the amount of data dimension computed as a linear combination of the individual amount of data metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Author%20%28metadata%29> a dqv:Metric;
+  ex:InputToCompute "VoID file or metadata"@en;
+  ex:MetricOutput "False: if the author is not indicated; string with authors: if the author is indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "stating the author and his contributors, the publisher of the data and its sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Author%20%28query%29> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[]: if the author is not indicated; -: the SPARQL endpoint is missing; list of authors: if the author is indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "stating the author and his contributors, the publisher of the data and its sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Availability%20for%20download%20%28metadata%29>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata or VoID file"@en;
+  ex:MetricOutput "0: The RDF dump is offline;  1: The RDF dump is online. -1: The RDF dump is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether an RDF dump is provided and can be downloaded"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Availability%20for%20download%20%28query%29> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "False: The RDF dump is offline;  True: The RDF dump is online. -: The RDF dump is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether an RDF dump is provided and can be downloaded"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Availability%20of%20RDF%20dump%20%28metadata%29>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata or VoID file"@en;
+  ex:MetricOutput "0: The RDF dump is offline;  1: The RDF dump is online. -1: The RDF dump is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether an RDF dump is provided and can be downloaded"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Availability%20of%20RDF%20dump%20%28query%29> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "False: The RDF dump is offline;  True: The RDF dump is online. -: The RDF dump is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether an RDF dump is provided and can be downloaded"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Availability%20of%20a%20common%20accepted%20Media%20Type>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or Metadata or VoID file"@en;
+  ex:MetricOutput "True: if at least one commonly accepted serialization format is provided; False: if no commonly accepted serialization format is provided; No dump available: if no dump is available;"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether data is available in a rdf serialization format that is commonly accepted"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/Availability%20score> a dqv:Metric;
+  ex:InputToCompute "Availability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the availability dimension computed as a linear combination of the individual availability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Average%20length%20of%20URIs%20%28object%29> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "Average # of characters in URIs (object). Best value: <80 characters"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of long URIs or those that contain query parameters"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Representational%20conciseness> .
+
+<http://example.org/Quality-Metric/Average%20length%20of%20URIs%20%28predicate%29>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "Average # of characters in URIs (predicate). Best value: <80 characters"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of long URIs or those that contain query param-eters"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Representational%20conciseness> .
+
+<http://example.org/Quality-Metric/Average%20length%20of%20URIs%20%28subject%29> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "Average # of characters in URIs (subject). Best value: <80 characters"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of long URIs or those that contain query param-eters"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Representational%20conciseness> .
+
+<http://example.org/Quality-Metric/Believability%20score> a dqv:Metric;
+  ex:InputToCompute "Believability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the believability dimension computed as a linear combination of the individual believability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Believability> .
+
+<http://example.org/Quality-Metric/Centrality> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "float: the centrality; empty: if the dataset is not interlinked."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of (a) interlinking degree, (b) clustering coefficient, (c) centrality, (d) open sameAs chains and (e) description richness through sameAs by using network measures"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Clustering%20coefficient> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "float: the clustering coefficient; {}: if the dataset is not interlinked."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of (a) interlinking degree, (b) clustering coefficient, (c) centrality, (d) open sameAs chains and (e) description richness through sameAs by using network measures"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Completeness%20score> a dqv:Metric;
+  ex:InputToCompute "Completeness metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the completeness dimension computed as a linear combination of the individual completeness metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Completeness> .
+
+<http://example.org/Quality-Metric/Conciseness%20score> a dqv:Metric;
+  ex:InputToCompute "Conciseness metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the conciseness dimension computed as a linear combination of the individual conciseness metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Conciseness> .
+
+<http://example.org/Quality-Metric/Consistency%20score> a dqv:Metric;
+  ex:InputToCompute "Consistency metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the consistency dimension computed as a linear combination of the individual consistency metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Contributor> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "[]: if the contributors is not indicated; -: the SPARQL endpoint is missing; list of contributors: if the contributors is indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "stating the author and his contributors, the publisher of the data and its sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Currency%20score> a dqv:Metric;
+  ex:InputToCompute "Currency metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the currency dimension computed as a linear combination of the individual currency metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Currency> .
+
+<http://example.org/Quality-Metric/Dataset%20URL> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or Metadata or VoID file"@en;
+  ex:MetricOutput "url: the dataset url; absent: if the dataset url can't be retrieved"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dataset URL"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Believability> .
+
+<http://example.org/Quality-Metric/Dataset%20update%20frequency> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[]: the update frequency is not indicated; -: the SPARQL endpoint is missing; list of strings: the update frequency is indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "it corresponds to the 'stating the [...] frequency of data validation'"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Timeliness> .
+
+<http://example.org/Quality-Metric/Degree%20of%20connection> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "integer: the degree of connection; -: if the dataset is not interlinked."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of (a) interlinking degree, (b) clustering coefficient, (c) centrality, (d) open sameAs chains and (e) description richness through sameAs by using network measures"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Deprecated%20classes%2Fproperties%20used> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of use of OWL classes owl:DeprecatedClass and owl:DeprecatedProperty"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Entities%20as%20member%20of%20disjoint%20class>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "no. of entities described as members of disjoint classes / total no. of entities described in the dataset"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Extensional%20conciseness> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "number of unique objects in relation to the overall number of object representations in the dataset"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Conciseness> .
+
+<http://example.org/Quality-Metric/F%20score> a dqv:Metric;
+  ex:InputToCompute "FAIR principles scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall FAIR score computed as a linear combination of all scores of the individual F subprinciples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F1-D%20URIs%20dereferenceability> a dqv:Metric;
+  ex:InputToCompute "Data"@en;
+  ex:MetricOutput "# of dereferenceable URIs / total # of URIs. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "URIs dereferenceability"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F1-M%20Unique%20and%20persistent%20ID> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: dataset registered in a search engine that provides a persistent DOI; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Unique and persistent identifiers"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F2a-M%20-%20Metadata%20availability%20via%20standard%20primary%20sources>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: SPARQL endpoint, searchable engine, or VoID/DCAT; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metadata availability via standard primary sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F2b-M%20Metadata%20availability%20for%20all%20the%20attributes%20covered%20in%20the%20FAIR%20score%20computation>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "# of covered attributes / total # of attributes. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Coverage of required attributes"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F3-M%20Data%20referrable%20via%20a%20DOI> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: metadata attach DOI(s) to data; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Data referrable via a DOI"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/F4-M%20Metadata%20registered%20in%20a%20searchable%20engine>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: dataset registered in any search engine; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metadata registered in a searchable engine"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/FAIR%20score> a dqv:Metric;
+  ex:InputToCompute "FAIR principles scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall FAIR score computed as a linear combination of all scores of the individual FAIR principles"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/Functional%20properties%20with%20inconsistent%20values>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "FP = 1 - num of triples of with inconsistent values for functional properties / num of triples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/I%20score> a dqv:Metric;
+  ex:InputToCompute "Interoperability principles scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall Interoperability score computed as a linear combination of all scores of the individual I subprinciples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/I1-D%20Standard%20%26%20open%20representation%20format>
+  a dqv:Metric;
+  ex:InputToCompute "Data"@en;
+  ex:MetricOutput "1: valid mediatypes or OWL/RDF(S); 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Standard & open representation format"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/I1-M%20Metadata%20are%20described%20with%20VoID%2FDCAT%20predicates>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "1: published according to VoID/DCAT specs; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "VoID/DCAT description"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/I2%20Use%20of%20FAIR%20vocabularies> a dqv:Metric;
+  ex:InputToCompute "(Meta)data"@en;
+  ex:MetricOutput "# of FAIR vocabularies / total # of vocabularies. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Usage of FAIR vocabularies"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/I3-D%20Degree%20of%20connection> a dqv:Metric;
+  ex:InputToCompute "Data"@en;
+  ex:MetricOutput "1: contains link to another dataset; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Degree of connection"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/Intensional%20conciseness> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "number of unique objects in relation to the overall number of object representations in the dataset"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Conciseness> .
+
+<http://example.org/Quality-Metric/Interlinking%20completeness> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. insufficient data: if the interlinking completeness can't be calculated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "degree to which interlinks are not missing"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Completeness> .
+
+<http://example.org/Quality-Metric/Interlinking%20score> a dqv:Metric;
+  ex:InputToCompute "Interlinking metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the interlinking dimension computed as a linear combination of the individual interlinking metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Interoperability%20score> a dqv:Metric;
+  ex:InputToCompute "Interoperability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the interoperability dimension computed as a linear combination of the individual interoperability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interoperability> .
+
+<http://example.org/Quality-Metric/Interpretability%20score> a dqv:Metric;
+  ex:InputToCompute "Interpretability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the interpretability dimension computed as a linear combination of the individual interpretability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interpretability> .
+
+<http://example.org/Quality-Metric/Invalid%20usage%20of%20inverse-functional%20properties>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "IFP = 1 - num of triples of with inconsistent values for functional properties / num of triples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/Is%20on%20a%20trusted%20provider%20list> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "boolean: true if the provider is trusted; false: if the provider is not trusted"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether the provider/contributor is contained in a list of trusted providers"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Believability> .
+
+<http://example.org/Quality-Metric/Languages%20%28metadata%29> a dqv:Metric;
+  ex:InputToCompute "VoID file or metadata"@en;
+  ex:MetricOutput "absent: if no lang is indicated in the metadata; list of langs: if at least a lang tag is retrieved"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether metadata is available in different languages"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/Languages%20%28query%29> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "False: if no lang tag is retrieved; list of langs: if at least a lang tag is retrieved; -: if the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether data is available in different languages"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/License%20human%20redeable> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "True: the human readable license is indicated; False: the human readable license is not indicated; -: The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Detection of a license in the documentation of the dataset"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Licensing> .
+
+<http://example.org/Quality-Metric/License%20machine%20redeable%20%28metadata%29>
+  a dqv:Metric;
+  ex:InputToCompute "VoID file or metadata"@en;
+  ex:MetricOutput "string: the license if it can be recovered; False: the license is not indicated"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of the indication of a license in the VoID description or in the dataset itself"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Licensing> .
+
+<http://example.org/Quality-Metric/License%20machine%20redeable%20%28query%29> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "string: the license if it can be recovered; -: the license is not indicated or the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of the indication of a license in the VoID description or in the dataset itself"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Licensing> .
+
+<http://example.org/Quality-Metric/Licensing%20score> a dqv:Metric;
+  ex:InputToCompute "Licensing metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the licensing dimension computed as a linear combination of the individual licensing metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Licensing> .
+
+<http://example.org/Quality-Metric/Median%20latency> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "Median latency in milliseconds. Best value: <1000 ms"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "if an HTTP-request is not answered within an average time of one second, the latency of the data source is considered too low"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Performance> .
+
+<http://example.org/Quality-Metric/Median%20throughput> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "# of requests answered per second. Best value: Higher is better"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "ino. of answered HTTP-requests per second"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Performance> .
+
+<http://example.org/Quality-Metric/Modification%20date> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "-: if the modification date can't be retrieved; date: if the modification date is correctly retrieved"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Use of dates as the point in time of the last verification of a statement represented by dcterms:modifieds"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Currency> .
+
+<http://example.org/Quality-Metric/New%20terms%20defined%20in%20the%20dataset> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[]: if no new term is defined; -: the SPARQL endpoint is missing; list of new terms: if at least a new term is defined."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of whether existing terms from all relevant vo-cabularies for that particular domain have been reuse"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interoperability> .
+
+<http://example.org/Quality-Metric/New%20vocabularies%20defined%20in%20the%20dataset>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[]: if no new vocabulary is defined; -: the SPARQL endpoint is missing; list of new vocabularies: if at least a new vocabulary is defined."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "usage of established vocabularies"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interoperability> .
+
+<http://example.org/Quality-Metric/Normalized%20score> a dqv:Metric;
+  ex:InputToCompute "Quality dimensions scores"@en;
+  ex:MetricOutput "[0,100]. Best value: 100."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall quality score computed as a linear combination of all scores of the individual quality dimensions."@en .
+
+<http://example.org/Quality-Metric/Number%20of%20blank%20nodes> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of blank nodes; -: if the SPARQL endpoint is missing; False: if no blank node is present or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detecting the use of blank nodes"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interpretability> .
+
+<http://example.org/Quality-Metric/Number%20of%20entities> a dqv:Metric;
+  ex:InputToCompute "VoID file or (working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of entities; -: if the number of entities can't be retrieved or the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of entities"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Number%20of%20entities%20counted%20with%20regex>
+  a dqv:Metric;
+  ex:InputToCompute "VoID file or (working) SPARQL endpoint"@en;
+  ex:MetricOutput "number: the number of entities; -: if the number of entities can't be retrieved or the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of entities"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Number%20of%20labels%2Fcomments%20present%20on%20the%20data>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of labels/comments; -: the SPARQL endpoint is missing; False: if no label/comment is present or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "no. of entities described by stating an rdfs:label or rdfs:comment in the dataset / total no. of entities described in the data."@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Understandability> .
+
+<http://example.org/Quality-Metric/Number%20of%20property> a dqv:Metric;
+  ex:InputToCompute "VoID file or (working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of properties; -: if the number of properties can't be retrieved or the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of properties"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Number%20of%20samAs%20chains> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "False: no sameAs chains in the dataset; -: the SPARQL endpoint is missing; integer: number of sameAs chains in the dataset."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of (a) interlinking degree, (b) clustering coefficient, (c) centrality, (d) open sameAs chains and (e) description richness through sameAs by using network measures"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Number%20of%20triples%20%28metadata%29> a dqv:Metric;
+  ex:InputToCompute "VoID file or metadata"@en;
+  ex:MetricOutput "integer: the number of triples; -: if the number of triples can't be retrieved"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of triples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Number%20of%20triples%20%28query%29> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of triples; -: The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of triples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Amount%20of%20data> .
+
+<http://example.org/Quality-Metric/Ontology%20Hijacking%20problem> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "True: if ontology hijacking problem is detected; False: if ontology hijacking problem is not detected; -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of the redefinition by third parties of external classes/ properties such that reasoning over data using those external terms is affected"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/PageRank> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "float: the page rank; empty: if the dataset is not interlinked."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "analyzing page rank of the dataset"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Reputation> .
+
+<http://example.org/Quality-Metric/Performance%20score> a dqv:Metric;
+  ex:InputToCompute "Performance metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the performance dimension computed as a linear combination of the individual performance metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Performance> .
+
+<http://example.org/Quality-Metric/Presence%20of%20example> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "False: if examples are not provided; True: if examples are provided."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detecting whether examples of SPARQL queries are provided"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Understandability> .
+
+<http://example.org/Quality-Metric/Publisher> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "[]: if the publisher is not indicated; -: the SPARQL endpoint is missing; list of publishers: if the publisher is indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "stating the author and his contributors, the publisher of the data and its sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/R%20score> a dqv:Metric;
+  ex:InputToCompute "Reusability principles scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall Reusability score computed as a linear combination of all scores of the individual R subprinciples"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/R1.1%20Machine-%20or%20human-readable%20license%20retrievable%20via%20any%20primary%20source>
+  a dqv:Metric;
+  ex:InputToCompute "(Meta)data"@en;
+  ex:MetricOutput "1: license explicitly reported; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Any license retrievable"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/R1.2%20Publisher%20information%20such%20as%20authors-contributors-publishers%20and%20sources>
+  a dqv:Metric;
+  ex:InputToCompute "(Meta)data"@en;
+  ex:MetricOutput "1: publisher info explicitly reported; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Publisher details"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/R1.3-D%20Data%20organized%20in%20a%20standardized%20way>
+  a dqv:Metric;
+  ex:InputToCompute "Data"@en;
+  ex:MetricOutput "1: SPARQL endpoint or valid data dump or OWL/RDFS; 0: otherwise"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Data organized in standardized way"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/R1.3-M%20Metadata%20are%20described%20with%20VoID%2FDCAT%20predicates>
+  a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "Same as I1-M"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "VoID/DCAT description"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/FAIR> .
+
+<http://example.org/Quality-Metric/Regex%20uri> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "[] or empty value: no regex provided; -: if the SPARQL endpoint is missing; list of regex: if at least a regex is provided."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detecting whether a regular expression that matches the URIs is present"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Understandability> .
+
+<http://example.org/Quality-Metric/Representational-Conciseness%20score> a dqv:Metric .
+
+<http://example.org/Quality-Metric/Reputation%20score> a dqv:Metric;
+  ex:InputToCompute "Reputation metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the reputation dimension computed as a linear combination of the individual reputation metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Reputation> .
+
+<http://example.org/Quality-Metric/Requires%20authentication> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "False: Authentication is not required; True: authentication required; -: The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "use of login credentials (or use of SSL or SSH)"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Security> .
+
+<http://example.org/Quality-Metric/SKOS%20mapping%20properties> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "integer: the number of mapping properties; -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query. False: if no mapping property is present."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "skos:closeMatch | skos:exactMatch | skos:broadMatch | skos:narrowMatch | skos:relatedMatch"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Interlinking> .
+
+<http://example.org/Quality-Metric/Score> a dqv:Metric;
+  ex:InputToCompute "Quality dimensions scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall quality score computed as a linear combination of all scores of the individual quality dimensions"@en .
+
+<http://example.org/Quality-Metric/Security%20score> a dqv:Metric;
+  ex:InputToCompute "Security metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the security dimension computed as a linear combination of the individual security metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Security> .
+
+<http://example.org/Quality-Metric/Serialization%20formats> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or Metadata or VoID file"@en;
+  ex:MetricOutput "[]: if no serialization format is provided; list of serialization formats: if at least one serialization format is provided; -: if the SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether data is available in different serialization formats"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/Signed> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "boolean: true if the dataset is signed; false: if the dataset is not signed."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether the dataset is signed"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Sources> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "string: the website, the name and the email of the source; False: if the sources are not indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "stating the author and his contributors, the publisher of the data and its sources"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Sparql%20endpoint> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "Offline: if the sparql endpoint is not online;  Available: if SPARQL endpoint is online.; -:The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether the server responds to a SPARQL query"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Availability> .
+
+<http://example.org/Quality-Metric/Time%20elapsed%20since%20last%20modification> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or VoID file"@en;
+  ex:MetricOutput "-: if the modification date is not correctly retrieved or not indicated; an integer: if the modification date is correctly retrieved"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Currency only measures the time since the last modification"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Currency> .
+
+<http://example.org/Quality-Metric/Timeliness%20score> a dqv:Metric;
+  ex:InputToCompute "Timeliness metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the timeliness dimension computed as a linear combination of the individual timeliness metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Timeliness> .
+
+<http://example.org/Quality-Metric/Triples%20with%20empty%20annotation%20problem>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "labels, comments, notes which identifies triples whose property’s object value is empty string"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/Triples%20with%20malformed%20data%20type%20literals%20problem>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Incompatible with data type range"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/Triples%20with%20misplaced%20class%20problem> a
+    dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query. insufficient data: if the class cannot be recovered."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Detection of a URI defined as a class is used as a property or a URI defined as a property is used as a class"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Triples%20with%20misplaced%20property%20problem>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query. insufficient data: if the property cannot be recovered."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Detection of a URI defined as a class is used as a property or a URI defined as a property is used as a class"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Triples%20with%20white%20space%20in%20annotation%28at%20the%20beginning%20or%20at%20the%20end%29>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "presence of white space in labels"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accuracy> .
+
+<http://example.org/Quality-Metric/Trust%20value> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "float: the trust value;"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Meta-information about the identity of information provider"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Believability> .
+
+<http://example.org/Quality-Metric/URIs%20Deferenceability> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP URIs should be dereferenceable, i.e. HTTP clients should be able to retrieve the resources identified by the URI"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Accessibility> .
+
+<http://example.org/Quality-Metric/URL%20for%20download%20the%20dataset> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint or Metadata or VoID file"@en;
+  ex:MetricOutput "[]: if the sparql endpoint or rdf dump is not online;  list of links: if SPARQL endpoint and RDF dump are online."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Checking whether the data is available as a SPARQL endpoint and is available for download as an RDF dump"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/Undefined%20class%20used%20without%20declaration>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query. insufficient data: if the class cannot be recovered."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of classes and properties used without any formal definition"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Undefined%20properties%20used%20without%20declaration>
+  a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[0,1]. Best value: 1. -: if the SPARQL endpoint is missing or not online or error during the execution of the sparql query. insufficient data: if the property cannot be recovered."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of classes and properties used without any formal definition"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Consistency> .
+
+<http://example.org/Quality-Metric/Understandability%20score> a dqv:Metric;
+  ex:InputToCompute "Understandability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the understandability dimension computed as a linear combination of the individual understandability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Understandability> .
+
+<http://example.org/Quality-Metric/Use%20HTTPS> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "False: Does not use HTTPS; True: Uses HTTPS; -: The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTPS support"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Security> .
+
+<http://example.org/Quality-Metric/Use%20RDF%20structures> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "True: if RDF structures are used; False: if RDF structures aren't used.; -: The SPARQL endpoint is missing."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "detection of the non-standard usage of collections, containers and reification"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Representational%20conciseness> .
+
+<http://example.org/Quality-Metric/Verifiability%20score> a dqv:Metric;
+  ex:InputToCompute "Verifiability metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the verifiability dimension computed as a linear combination of the individual verifiability metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Verifiability> .
+
+<http://example.org/Quality-Metric/Versatility%20score> a dqv:Metric;
+  ex:InputToCompute "Versatility metrics scores"@en;
+  ex:MetricOutput "[0,1]. Best value: 1."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Overall score for the versatility dimension computed as a linear combination of the individual versatility metrics scores"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .
+
+<http://example.org/Quality-Metric/Vocabularies> a dqv:Metric;
+  ex:InputToCompute "(working) SPARQL endpoint"@en;
+  ex:MetricOutput "[]: if the vocabularies used are not indicated; -: the SPARQL endpoint is missing; list of vocabularies: if the vocabularies used are indicated."@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether a list of vocabularies used in the dataset is provided"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Understandability> .
+
+<http://example.org/Quality-Metric/metadata-media-type> a dqv:Metric;
+  ex:InputToCompute "Metadata"@en;
+  ex:MetricOutput "[]: if no serialization format is provided; list of serialization formats: if at least one serialization format is provided"@en;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "checking whether data is available in different serialization formats"@en;
+  dqv:inDimension <http://example.org/Quality-Dimension/Versatility> .

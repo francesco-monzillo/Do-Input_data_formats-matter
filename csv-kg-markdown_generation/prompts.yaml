@@ -1,0 +1,8 @@
+template_verbalization: |
+  Create me a report like this:
+  {quality_report_verbalized_example}
+  But use this data contained in a CSV file:
+  {quality_report}
+  Note that column names follow the following convention: Quality-Category_Quality-Dimension_Quality-metric 
+  Below is documentation describing each metric, what it is, the input required to calculate it, and the expected output value.
+  {quality_documentation}

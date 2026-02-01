@@ -1,0 +1,17 @@
+Source_File,Formulation,Average_Score,Count
+4_uniform_hyp,LS,0.7,20
+4_uniform_hyp,RV,0.7,20
+csv_data_json_doc,LS,0.475,20
+csv_data_json_doc,RV,0.525,20
+kg_data_embedded_doc,LS,0.725,20
+kg_data_embedded_doc,RV,0.675,20
+kg_labeled_hyp,LS,0.725,20
+kg_labeled_hyp,RV,0.625,20
+metric_labeled_hyp,LS,0.7,20
+metric_labeled_hyp,RV,0.675,20
+time_labeled_hyp,LS,0.725,20
+time_labeled_hyp,RV,0.675,20
+unstructured_data_unstructured_doc,LS,0.875,20
+unstructured_data_unstructured_doc,RV,0.625,20
+value_labeled_hyp,LS,0.7,20
+value_labeled_hyp,RV,0.6,20

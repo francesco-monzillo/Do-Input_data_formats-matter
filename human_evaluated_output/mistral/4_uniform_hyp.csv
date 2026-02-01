@@ -1,0 +1,100 @@
+Question_ID,Request,Expected_Response,Actual_Response,Voter 1,Voter 2,Voter 3,COMMENT,Final,,,,,,
+IR_1,"Retrieve the SPARQL endpoint status of NoiPA in the date September 7th, 2025?",On," ```json
+{
+    ""SPARQL endpoint status"": {
+        ""description"": ""Checking whether the SPARQL endpoint is available"",
+        ""input"": ""Metadata or VoID file"",
+        ""output"": ""Available: if the SPARQL endpoint is available; Offline: if the SPARQL endpoint is offline; -: if the SPARQL endpoint is missing."",
+        ""dimension"": ""Availability""
+    }
+}
+```",0,0,0,,0,,,,,,
+IR_1,Is the NoiPA SPARQL endpoint up in the last assessment?,On,"Yes, the NoiPA SPARQL endpoint was up in the last assessment.",1,1,1,,1,,,,,,
+IR_2,Which is the amount of data of the LiLa Lemma Bank dataset?,"1,699,687",The amount of data score for the LiLa Lemma Bank dataset is 0.333333.,0,0,0,,0,,,,,,
+IR_2,How many triples does LiLa Lemma Bank have?,"1,699,687","LiLa Lemma Bank has approximately 200,000 canonical forms for Latin that are used to interlink the linguistic resources in the LiLa Knowledge Base.",0,0,0,,0,,,,,,
+IR_3,Which is the license of DBLP?,CC-0,The license of the DBLP dataset is under the Creative Commons Attribution 4.0 International License (CC BY 4.0).,0,0,0,,0,,,,,,
+IR_3,How is DBLP licensed?,CC-0," DBLP is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). This means that you are free to share and adapt the work, as long as you give appropriate credit, indicate if changes were made, and do not use the material for commercial purposes. For more details, you can refer to the license at https://creativecommons.org/licenses/by/4.0/.",0,0,0,,0,,,,,,
+IR_4,Which is the accuracy score of WordNet?,0.00,The accuracy score of WordNet is 0.000000.,1,1,1,,1,,,,,,
+IR_4,How accurate is WordNet?,0.00,"The accuracy of WordNet varies depending on the context and specific use case. However, based on the provided data, here are some key points regarding its accuracy:
+
+- **Accuracy Score**: The accuracy score for WordNet is consistently reported as 0.000000 across multiple entries. This indicates that there might be some issues with the accuracy of the data in WordNet.
+
+- **Interpretability Score**: The interpretability score is also reported as 0.000000, suggesting that the data might be difficult to interpret accurately.
+
+- **Consistency Score**: The consistency score is reported as 0.000000, indicating potential inconsistencies within the dataset.
+
+- **Completeness Score**: The completeness score is reported as 0.000000, which suggests that the dataset might be lacking some essential information.
+
+- **Representational-Consistency Score**: This score is also reported as 0.000000, indicating potential issues with the consistency of representations within the dataset.
+
+- **Representational-Conciseness Score**: Reported as 0.000000, this suggests that the dataset might not be concise in its representations.
+
+- **Verifiability Score**: The verifiability score is reported as 0.331667, which is relatively low, indicating that the data might not be easily verifiable.
+
+- **Believability Score**: The believability score is reported as 0.800000, which is relatively high, suggesting that the data is generally believed to be accurate.
+
+- **Trust Value**: The trust value is reported as 0.750000, which is moderately high, indicating a reasonable level of trust in the dataset.
+
+- **Currency Score**: The currency score is reported as 0.000000, suggesting that the data might not be up-to-date.
+
+- **FAIR Score**: The overall FAIR score is reported as 2.030000, which is relatively high, indicating good adherence to FAIR principles.
+
+These scores suggest that while WordNet has some strengths, particularly in terms of believability and trust, there are significant areas for improvement, especially in accuracy, consistency, completeness, and currency.
+",0,0,1,,0,,,,,,
+IR_5,What is the trust value of the Linked Open Camera dataset?,0.5," The trust value of the Linked Open Camera dataset is 0.750000.
+",0,0,0,,0,,,,,,
+IR_5,How trustworthy is the Linked Open Camera dataset?,0.5," The Linked Open Camera dataset has varying levels of trustworthiness depending on the specific metrics and dimensions evaluated. Here are some key points from the provided data:
+
+1. **Trust Value**: The trust value for the Linked Open Camera dataset is 0.750000, which indicates a moderate level of trustworthiness.
+2. **Representational-Conciseness Score**: The dataset has a Representational-Conciseness score of 0.500013, suggesting that there is room for improvement in the consistency and clarity of the data representation.
+3. **Interpretability Score**: The interpretability score is 0.000000, indicating potential issues with the ease of understanding and interpreting the data.
+4. **Verifiability Score**: The verifiability score is 0.331667, which suggests that the dataset could benefit from improvements in areas related to verification and validation.
+5. **FAIR Score**: The overall FAIR score is 2.030000, which provides a comprehensive assessment of the dataset's adherence to FAIR principles (Findability, Accessibility, Interoperability, Reusability).
+
+These metrics suggest that while the Linked Open Camera dataset has some strengths, it also has areas where trustworthiness could be improved, particularly in terms of interpretability, verifiability, and representational consiseness.",0,0,0,,0,,,,,,
+TA_1,Is the number of triples of NoiPA retrieved via the SPARQL endpoint always the same?,"No, they slightly increase over time."," No, the number of triples retrieved via the SPARQL endpoint for NoiPA can vary depending on the specific query and the state of the dataset at the time of the query. The provided data shows different numbers of triples for various queries and dates. For example, the number of triples (query) for NoiPA is reported as 35556767.000000 on 2025-07-13 and 352447414.000000 on 2025-08-03.",1,1,1,,1,,,,,,
+TA_1,The number of triples of NoiPA retrieved via the SPARQL endpoint is constant?,"No, they slightly increase over time.","Yes, the number of triples of NoiPA retrieved via the SPARQL endpoint is constant at 340,000,000 triples.",0,0,0,,0,,,,,,
+TA_2,Is the SPARQL endpoint of DBLP always available?,Yes,"Yes, the SPARQL endpoint of DBLP is always available.",1,1,1,,1,,,,,,
+TA_2,Is the DBLP SPARQL endpoint always up?,Yes,"Yes, the DBLP SPARQL endpoint is always up.",1,1,1,,1,,,,,,
+TA_3,Is the data dump of the Allie Abbreviation And Long Form dataset always set to 1 in the observed period?,"No, it is discontinuous"," No, the data dump of the Allie Abbreviation And Long Form dataset is not always set to 1 in the observed period. The dataset has multiple versions and updates over time.
+",1,1,1,,1,,,,,,
+TA_3,Is the data dump of the Allie Abbreviation And Long Form dataset always up?,"No, it is discontinuous"," No, the data dump of the Allie Abbreviation And Long Form dataset is not always up. The availability of the data dump varies across different dates and sources. For instance, the data dump was available on 2025-05-04 but not available on 2025-09-07. Similarly, it was available on 2025-06-01 but not available on 2025-07-13. The availability status can change based on various factors such as updates, maintenance, or changes in the hosting infrastructure.",1,1,1,,1,,,,,,
+TA_4,Is the accuracy of NoiPA constant over time?,No," The accuracy of NoiPA appears to be consistently high across different time points, as indicated by the Accuracy score entries in the provided data. For instance, the Accuracy score for NoiPA is reported as 0.999660 on 2025-07-13, 1.000000 on 2025-09-07, and 0.999660 again on 2025-07-13. This suggests that the accuracy of NoiPA has remained stable and reliable over the period from 2025-07-13 to 2025-09-07.",0,0,0,,0,,,,,,
+TA_4,Does the accuracy of NoiPA remain consistent over time?,No," The accuracy of NoiPA appears to fluctuate over time based on the provided data. For instance, the Accuracy score for NoiPA is 0.400000 on 2025-05-04, but it varies to 0.999999 on 2025-07-13. This indicates that the accuracy of NoiPA is not consistent over time.",1,1,0.5,,1,,,,,,
+TA_5,What is the longest continuous period in which the Allie Abbreviation And Long Form dataset data dump has been equals to 1?,91 days, The longest continuous period in which the Allie Abbreviation And Long Form dataset data dump has been available is from 2025-06-01 to 2025-09-07.,0,0,0,,0,,,,,,
+TA_5,"For how long, without interruption, has the Allie Abbreviation And Long Form dataset data dump remained up?",91 days,The Allie Abbreviation And Long Form dataset data dump has been available without interruption since its initial release.,0,0,0,,0,,,,,,
+Co_1,Which dataset has the highest number of triples?,DBLP,"The dataset with the highest number of triples is ""dblp-kg"" with 1440987.000000 triples.",1,1,1,,1,,,,,,
+Co_1,Which is the biggest dataset among the compared ones?,DBLP,"The biggest dataset among the compared ones is ""dblp-kg"" with 15400000.000000 triples.",1,1,1,,1,,,,,,
+Co_2,Which is the dataset performing worst in the license metric?,CIDOC-CRM,"The dataset performing worst in the license metric is ""LemmaBank"" with a Licensing score of 0.500000 across multiple dates.",0,0,0,,0,,,,,,
+Co_2,Which is the worst performing dataset in the license metric?,CIDOC-CRM,"The worst performing dataset in the license metric is ""CIDOC-CRM"" with a Licensing score of 0.000000.",1,1,1,,1,,,,,,
+Co_3,What is the mean score for the accuracy dimension?,0.50," The mean score for the accuracy dimension is computed as a linear combination of the individual accuracy metrics scores, resulting in a score between 0 and 1. The best value is 1.",0,0,0,,0,,,,,,
+Co_3,What is the mean value of the accuracy dimension?,0.50,"The mean value of the accuracy dimension is 0.5, indicating that the average accuracy score across all datasets is 50%.",1,1,1,,1,,,,,,
+Co_4,What is the best observed score in the Verifiability dimension?,"0.4983 (NoiPA, Allie, Bathing Water Quality)",The best observed score in the Verifiability dimension is 1.000000.,0,0,0,,0,,,,,,
+Co_4,What is the highest observed Verifiability score?,"0.4983 (NoiPA, Allie, Bathing Water Quality)",The highest observed Verifiability score is 1.000000.,0,0,0,,0,,,,,,
+Co_5,What are the highest-performing dimensions in September 2025?,"License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability"," The highest-performing dimensions in September 2025 based on the provided data are:
+
+1. **Performance** with an overall score of 3.070000 for bpr and 2.820000 for NoiPA.
+2. **Availability** with an overall score of 1.000000 for both bpr and NoiPA.
+3. **Interpretability** with an overall score of 0.999999 for bpr and 0.999660 for NoiPA.",0,0,0,,0,,,,,,
+Co_5,What are the dimensions performing better in September 2025?,"License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability"," The dimensions that perform well in September 2025 include ""Performance,"" ""Availability,"" and ""Currency."" These dimensions have higher scores indicating good performance, availability, and up-to-date information respectively.",0,0,0,,0,,,,,,
+E&D_1,Why is the availability score equals to 1 for the DBLP dataset?,Because all the metrics in the availability dimension can be correctly computed," The availability score being equal to 1 for the DBLP dataset indicates that the dataset has achieved perfect availability according to the criteria evaluated. This means that the dataset meets all the requirements for high availability, including having a reliable and accessible SPARQL endpoint, providing an RDF dump that is readily available, and ensuring that the dataset is consistently reachable through various methods like HTTP requests.",0,0,0.5,,0,,,,,,
+E&D_1,Why does the DBLP dataset have an availability score of 1?,Because all the metrics in the availability dimension can be correctly computed," The DBLP dataset has an availability score of 1 because it meets several key criteria related to availability. Specifically, the following factors contribute to this high score:
+
+1. **Availability of RDF dump**: Both the metadata and the actual RDF dump files are readily available. This ensures that users can easily access the complete dataset.
+
+2. **Accessibility via SPARQL Endpoint**: The dataset is accessible through a functioning SPARQL endpoint, which allows users to perform complex queries and retrieve specific subsets of the data efficiently.
+
+3. **High Availability Score for Metadata**: The metadata associated with the dataset is highly accessible and well-documented, ensuring that users can understand how to access and utilize the data effectively.
+
+4. **Regular Updates**: The dataset is regularly updated, ensuring that the latest version of the data is always available to users.
+
+These combined elements ensure that the DBLP dataset is highly available, making it easy for researchers and other stakeholders to access and work with the data.",0,0,0.5,,0,,,,,,
+E&D_2,Does a score of amount of data equals to 0 mean that the dataset is empty?,"No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata."," No, a score of 0 for the amount of data metric indicates that there is no data available according to this specific metric. It doesn't necessarily imply that the entire dataset is empty, but rather that the evaluated aspect of the data is lacking.",1,1,1,,1,,,,,,
+E&D_2,"If the amount-of-data score is 0, does that mean the dataset contains no data?","No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata."," No, the Amount of Data Score being 0 indicates that the dataset has minimal data according to the criteria evaluated within this specific metric. It doesn't necessarily imply there is absolutely no data but rather suggests that the dataset might be lacking sufficient information based on what was assessed.
+",1,1,1,,1,,,,,,
+E&D_3,"When the availability score is 1, does it mean that both the SPARQL endpoint and the data dump are working?",Yes," Yes, when the availability score is 1, it indicates that either the SPARQL endpoint or the data dump is fully operational. This means that users can reliably access the dataset through these methods.",0,0,0,,0,,,,,,
+E&D_3,"if the availability score is 1, does that mean both the SPARQL endpoint and the data dump are up?",Yes,"Yes, an Availability Score of 1 indicates that either the SPARQL endpoint or the data dump is fully operational and accessible.",0,0,0,,0,,,,,,
+E&D_4,"if license is set to 1, does it mean that an open license is used?","No, it means that a license is specified"," Yes, when `_machine_readable_license_metadata_is_retrievable` is set to ""1"", it indicates that there is a machine-readable license specified in the metadata. This typically means that an open license is being used, allowing others to freely reuse the data according to the terms of the specific license provided.",0,0,0,,0,,,,,,
+E&D_4,"If license is set to 1, does it mean that an open license is used?","No, it means that a license is specified"," Yes, setting `_machine_readable_license_metadata_is_retrievable` to 1 indicates that an open license is used. This means that the metadata includes clear information about how the data can be reused under specific terms defined by the chosen open license.",0,0,0,,0,,,,,,
+E&D_5,"If verifiability is set to 1, does it mean that all information about providers are set?",Yes," Yes, if ""verifiability"" is set to 1, it means that all relevant information about the providers has been verified and is accurate. This includes ensuring that the provider names, affiliations, contact information, and other pertinent details have been checked and confirmed to be correct.",1,1,1,,1,,,,,,
+E&D_5,"If the verifiability score is 1, does it mean that all provider information is available?",Yes," Yes, if the Verifiability Score is 1, it indicates that all relevant provider information is accurately specified and available within the dataset. This includes details like the names and contact information of the authors, contributors, publishers, and other stakeholders involved in creating and maintaining the dataset.",1,1,1,,1,,,,,,

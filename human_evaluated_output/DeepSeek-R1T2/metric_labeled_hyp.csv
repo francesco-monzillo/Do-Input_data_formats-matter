@@ -1,0 +1,1290 @@
+Question_ID,Request,Expected_Response,Actual_Response,Voter 1,Voter 2,Voter 3,COMMENT,Final,,,,,,
+IR_1,"Retrieve the SPARQL endpoint status of NoiPA in the date September 7th, 2025?",On,"The SPARQL endpoint status for NoiPA on September 7th, 2025 is Available.
+
+Key Details:
+Endpoint URL: https://sparql-noipa.mef.gov.it/sparql
+Availability Status: Active and responding to queries.
+Date Confirmed: 2025-09-07 (latest record on this date).
+Additional Notes:
+The endpoint has been consistently marked as ""Available"" in multiple records, including recent prior dates (e.g., 2025-08-03, 2025-07-13).
+No downtime or failures were recorded for this date.
+For live verification, you can access the endpoint directly:
+🔗 NoiPA SPARQL Endpoint",1,1,1,,1,,,,,,
+IR_1,Is the NoiPA SPARQL endpoint up in the last assessment?,On,"💡 Yes, the NoiPA SPARQL endpoint was Available in the last assessment recorded on 2025-09-07.
+
+Detailed Analysis
+The dataset contains four assessments of the NoiPA SPARQL endpoint, all reporting an ""Available"" status:
+
+Assessment Date	Status	Endpoint URL
+2025-05-04	Available	https://sparql-noipa.mef.gov.it/sparql
+2025-07-13	Available	https://sparql-noipa.mef.gov.it/sparql
+2025-08-03	Available	https://sparql-noipa.mef.gov.it/sparql
+2025-09-07	Available	https://sparql-noipa.mef.gov.it/sparql
+Key Observations:
+
+Latest Assessment: The most recent evaluation (2025-09-07) confirms the endpoint was operational.
+Consistency: No instances of downtime (""Offline"" or ""Unavailable"") were reported in the data.
+Stability: The endpoint URL remained unchanged across all assessments.
+⚠️ Limitations: While the endpoint was functional, other metrics like RDF dump availability scored False, and URI dereferencing scored 0.000000, indicating potential issues with data accessibility beyond the SPARQL service itself.
+
+Mathematical Evidence
+The availability score for the endpoint can be formalized as:
+
+Availability 
+SPARQL
+​
+ = 
+Total Assessments
+Number of Available Assessments
+​
+ ×100%= 
+4
+4
+​
+ ×100%=100%
+
+This confirms uninterrupted service availability throughout the assessment period.",1,1,1,,1,,,,,,
+IR_2,Which is the amount of data of the LiLa Lemma Bank dataset?,"1,699,687","The LiLa Lemma Bank dataset contains the following key data metrics:
+
+Metadata Triples: There are 1,699,687 metadata triples, as consistently indicated in multiple entries (e.g., ""Number of triples (metadata)"": ""1699687.000000"").
+Approximate Canonical Forms: The dataset includes approximately 200,000 canonical forms for Latin, modeled using the Ontolex ontology, as described in the dataset metadata.
+Summary Table
+Metric	Count/Value
+Number of Metadata Triples	1,699,687
+Lemmas (Canonical Forms)	~200,000
+Key Notes:
+The dataset does not specify the number of entities or query triples (""Number of entities"" and ""Number of triples (query)"" are marked as ""None"").
+Its primary purpose is to interlink linguistic resources in the LiLa Knowledge Base.
+Data Source:
+Available at LiLa Lemma Bank (URL from ""Dataset URL"" entries).
+For more details, see the repository:
+📁 CIRCSE/LiLa_Lemma-Bank (GitHub)",1,1,1,,1,,,,,,
+IR_2,How many triples does LiLa Lemma Bank have?,"1,699,687","LiLa Lemma Bank Triples Count
+The LiLa Lemma Bank (LemmaBank) consists of 3,318,298 triples linked within the knowledge base. This number is consistently reported across multiple timestamps in the data.
+
+Additional Details:
+Metadata Triples: 1,699,687 triples
+These provide descriptive information about the dataset.
+Queryable Triples: Not specified (marked as None)
+Notes:
+The primary count of 3,318,298 triples reflects structured RDF data interlinking linguistic resources, focusing on Latin canonical forms modeled with the Ontolex ontology.
+The dataset is stable (volatility score = 0), with no significant updates affecting the triples count in available records.
+Source:
+
+LiLa Lemma Bank GitHub
+LiLa Knowledge Base SPARQL Endpoint
+For more granular metrics (e.g., properties, entities), see the official documentation.",0,1,1,,1,,,,,,
+IR_3,Which is the license of the DBLP dataset?,CC-0,"The DBLP dataset (dblp Knowledge Graph) is licensed under the Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+
+Key Licensing Details:
+License Type: Public Domain Dedication (CC0 1.0).
+Human-Readable License: None explicitly stated (""License human redeable"": ""-"" in metadata).
+Machine-Readable License:
+Metadata links: http://www.opendefinition.org/licenses/cc-zero
+Query results: https://creativecommons.org/publicdomain/zero/1.0/
+Implications:
+🆓 No copyright restrictions: You can freely copy, modify, distribute, and use the data, even for commercial purposes.
+⚠️ No attribution required (though citing DBLP is recommended for academic integrity).
+Verification:
+Official license: CC0 1.0 Summary.
+DBLP dataset links:
+Metadata: https://dblp.org/rdf/dblp.ttl.gz
+DOI: https://doi.org/10.4230/dblp.rdf.ntriples
+Conflicting Licenses?
+The raw data includes other datasets (e.g., bpr with CC-BY-SA 3.0), but for DBLP-KG (dblp-kg), only CC0 applies.",1,1,1,,1,,,,,,
+IR_3,How is DBLP licensed?,CC-0,"The DBLP Knowledge Graph (dblp-kg) is licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication, placing it in the public domain. Here's the detailed breakdown:
+
+🔑 Core Licensing Facts
+Machine-Readable License:
+Metadata explicitly uses:
+http://www.opendefinition.org/licenses/cc-zero
+This corresponds to CC0 1.0 (creativecommons.org/publicdomain/zero/1.0).
+
+Human-Readable License:
+Not directly retrievable in the dataset (""License human redeable"": [""dblp-kg"", ""-"", ...]), though the metadata link provides legal clarity.
+
+License Retrievability:
+
+Machine-readable license confirmed via both metadata (VoID/DCAT) and SPARQL query.
+Scored 1.000000 for ""R1.1: Machine- or human-readable license retrievable via any primary source"".
+📊 Licensing Compliance Metrics
+Metric	Score (0–1)	Assessment
+Machine-readable license (metadata)	1.0	✓ Explicitly provided
+Machine-readable license (query)	1.0	✓ Verified via SPARQL
+Human-readable license (metadata/query)	0.0	✗ Not detected
+Overall Licensing Score (dataset-wide)	0.5	Partial compliance
+🚫 Key Restrictions & Usage Rights
+No restrictions: CC0 waives all copyright/IP rights → Public Domain.
+Permissions:
+✓ Free to copy, modify, distribute.
+✓ No attribution required (though citation is encouraged academically).
+ℹ️ Source & Publisher Information
+Contact:
+
+Name: Marcel R. Ackermann  
+Email: marcel.ackermann@dagstuhl.de  
+Organization: dblp (https://dblp.org)
+Metadata Source:
+
+Retrieved from: https://sparql.dblp.org/sparql  
+Last Verified: 2025-09-07
+📥 Access Details
+RDF Dump:
+
+URLs: [
+  ""https://doi.org/10.4230/dblp.rdf.ntriples"",
+  ""https://dblp.org/rdf/dblp.ttl.gz""
+]
+SPARQL Endpoint: https://sparql.dblp.org/sparql
+⚠️ Critical Notes
+License Consistency: Machine-readable licenses are stable, but human-readable documentation is missing (could pose usability issues).
+VoID File: Absent (""Availability VoID file"": ""VoID file absent""), limiting structured metadata discovery.
+For compliance, users should reference the CC0 1.0 link and verify updates via DBLP's official channels.
+
+Full Licensing Attributes for dblp-kg:
+Machine-Redable Metadata License:
+
+""License machine redeable (metadata)"": [""dblp-kg"", ""http://www.opendefinition.org/licenses/cc-zero"", ""2025-09-07""]
+Dataset Publisher:
+
+""Sources"": [""dblp-kg"", ""Web:https://dblp.org Name:Marcel R. Ackermann Email:marcel.ackermann@dagstuhl.de"", ""2025-09-07""]",1,1,1,,1,,,,,,
+IR_4,Which is the accuracy score of WordNet?,0.00,"The accuracy score for WordNet (identified as w3c-wordnet in the dataset) is consistently reported as 0.000000 across all available measurement dates (2025-05-04, 2025-07-13, 2025-08-03, 2025-09-07).
+
+Summary:
+Dataset	Accuracy Score	Measurement Dates
+w3c-wordnet	0.000000	All dates between 2025-05-04 and 2025-09-07
+Key Observations:
+Consistency: The score is uniformly 0.000000 across all recorded timestamps, indicating no variation in accuracy.
+Scale: The accuracy score follows a normalized scale of [0,1], where 1.000000 represents maximum accuracy. A value of 0.000000 signifies the lowest possible score.
+Supporting Metrics: Other quality dimensions (e.g., F-score, Completeness, Interpretability) vary for WordNet, but Accuracy remains unchanged.
+For further analysis of other metrics (e.g., F-score, Interlinking), let me know!",1,1,1,,1,,,,,,
+IR_4,How accurate is WordNet?,0.00,"Based on the provided dataset, the accuracy assessment for WordNet (w3c-wordnet) is explicitly reported as:
+
+Accuracy Score
+0.000000 across all measured dates (2025-05-04, 2025-07-13, 2025-08-03, 2025-09-07).
+Accuracy metric context:
+
+The accuracy dimension likely evaluates semantic correctness (e.g., correctness of synonymy/hyponymy relationships). A score of 0 suggests:
+Potential inconsistencies in lexical-semantic relations.
+Outdated classifications (as WordNet evolves slowly).
+Mismatches with real-world usage (e.g., domain-specific terms).
+Companion scores:
+
+Believability: 0.800 (high confidence in source reliability).
+Verifiability: 0.332 (limited metadata for verification).
+FAIR score: ~3.1–3.3 (moderate compliance).
+Interlinking: 0.000 (no links to external datasets).
+Methodological note:
+Accuracy scores of 0.000 may indicate strict evaluation criteria (e.g., alignment with a gold-standard ontology not fully met by WordNet).
+
+Key Observations
+Conflicting signals: High believability but low accuracy suggests:
+Trust in WordNet's authority ≠ alignment with evaluator's benchmarks.
+Possible gaps in dynamic/domain-specific coverage.
+Recommendation:
+Treat WordNet as a high-level reference ontology, but verify terms against domain-specific resources (e.g., UMLS for biomedicine).
+Dataset Comparison (Selected)
+Dataset	Accuracy Score	FAIR Score
+w3c-wordnet (WordNet 2.0)	0.000	3.11–3.30
+LemmaBank	0.000	2.82
+allie-abbreviation-...	1.000	3.69–3.88
+dblp-kg	1.000	-
+NoiPA (Italian public admin)	0.999–1.000	2.76
+* Scores reflect specific benchmarks (e.g., FAIR principles). Context-dependent.",1,1,1,,1,,,,,,
+IR_5,What is the trust value of the Linked Open Camera dataset?,0.5,"The Linked Open Camera dataset corresponds to the bpr (BPR - Dati della Camera) entries in the provided data.
+
+Trust Value Analysis:
+The trust value for the Linked Open Camera (bpr) dataset is consistently 0.500000 across all recorded dates:
+
+2025-05-04: 0.500000
+2025-07-13: 0.500000
+2025-08-03: 0.500000
+2025-09-07: 0.500000
+
+{""Trust value"":[""bpr"",""0.500000"",""2025-08-03""]}
+{""Trust value"":[""bpr"",""0.500000"",""2025-05-04""]}
+{""Trust value"":[""bpr"",""0.500000"",""2025-09-07""]}
+{""Trust value"":[""bpr"",""0.500000"",""2025-07-13""]}
+Key Metadata:
+SPARQL Endpoint: http://dati.camera.it/sparql
+Trust Dimension: Believability
+Provider: Linked Open Data from the Italian Chamber of Deputies.
+This dataset exhibits lower trustworthiness (0.5) compared to others like micro-coronavirus (0.75) or environment-agency-bathing-water-quality (1.0), likely due to incomplete verifiability/suboptimal metadata quality.
+
+Security Metrics:
+Security Score: 1.000000
+HTTPS Usage: True
+Authentication: Not required (False)
+FAIR Metrics:
+Verifiability Score: 0.110000
+Interlinking Score: 0.000010
+Consistency Score: 0.876190
+Recent Assessment (2025-09-07):
+
+{ ""Trust value"":[""bpr"",""0.500000"",""2025-09-07""], ""Security score"":[""bpr"",""1.000000"",""2025-09-07""] }",1,1,1,,1,,,,,,
+IR_5,How trustworthy is the Linked Open Camera dataset?,0.5,"The Linked Open Camera dataset (associated with the SPARQL endpoint http://dati.camera.it/sparql and referenced under the ""bpr"" provider) shows a moderate level of overall trustworthiness, but has critical weaknesses in security, verifiability, and compliance with standards. Below is a structured analysis:
+
+🔑 Key Trustworthiness Metrics
+Metric	Value (Avg.)	Concerns/Actions
+Trust Value	0.500	Low on security (1.000 is worst)
+Accuracy	0.600-1.000	Good
+Verifiability	0.110	Very poor (critically weak)
+Believability	0.500	Minimal confidence
+Consistency	~0.308-0.499	Low consistency in metadata/responses
+Security	0.000-1.000	Critical vulnerability: Requires authentication, HTTPS is used (True), but lax endpoint security
+License Compliance	✅	Uses CC BY-SA 3.0 (human/machine-readable)
+Provider Trust List	❌	Not listed as a trusted provider
+⚠️ Critical Concerns
+Authentication: Supports HTTPS but lacks robust verification (Requires authentication = False inconsistently scored).
+Vulnerabilities: No HTTPS for metadata endpoints, risking MITM attacks (Use HTTPS: NoiPA=False, bpr=True mixed).
+Data Privacy: SPARQL endpoint lacks encryption during query transmission (http://dati.camera.it/sparql).
+Source Traceability: Poorly documented author/publisher metadata (_authors_specified=0.0).
+Metadata Gaps: Absence of VoID/DCAT descriptors (a FAIR principle violation).
+Inconsistent Signatures: No digital signatures (Signed=False) reduce trust in integrity.
+Interoperability: Uses RDF structures (True) but vocabularies are poorly reused (_reuse_of_existing_terms=0.000).
+Findability: Low Reputation Score (0.000008) and absent from search engines (A2-M=0.000000).
+Accessibility: Data dumps unavailable (Availability for download (query)=False).
+🟢 Positive Attributes
+Accuracy: Near-perfect 1.000 for factual correctness (e.g., ""bpr"" provider).
+Licensing: Clear CC BY-SA 3.0 terms (License machine redeable).
+Performance: SPARQL endpoint latency is minimal (Performance score=0.505-0.750).
+📊 Trustworthiness Score Calculation
+Applying simplified weighting:
+
+Score 
+trust
+​
+ = 
+7
+1
+​
+ (Trust+Verifiability+Believability+Security+Accuracy+Consistency+License)
+= 
+7
+1
+​
+ (0.5+0.11+0.5+0.5+0.8+0.4+0.5)≈ 
+0.487
+​
+ 
+Interpretation: Below 0.5/1.0 = ""Conditionally Trustworthy"" (use with verification).
+
+🛡️ Recommendations
+Mandatory Verification: Always validate outputs via checksums or external sources.
+HTTPS Enforcement: Only access the SPARQL endpoint over HTTPS if upgraded.
+Provenance Checks: Augment with trusted datasets (e.g., NoiPA with 0.750 Trust Value).
+Usage Scope: Avoid for high-risk applications (e.g., legal/policy decisions).
+📌 Conclusion
+The Linked Open Camera dataset is moderately trustworthy for non-critical uses but requires strict verification protocols due to security and verifiability flaws. Prioritize it only when supplemented with higher-trust sources.",0,0,1,,0,,,,,,
+TA_1,Is the number of triples of NoiPA retrieved via the SPARQL endpoint always the same?,"No, they slightly increase over time.","No, the number of triples retrieved via the SPARQL endpoint for NoiPA is not always the same.
+
+Key Observations:
+Variation in Triple Counts (SPARQL Query):
+
+2025-08-03: 439,796,613
+2025-05-04: 412,894,535
+2025-09-07: 446,170,057
+2025-07-13: 432,861,574
+These values differ significantly across dates.
+Metadata Triple Count (Consistent):
+
+The ""Number of triples (metadata)"" remains 340,000,000 for all dates, but this reflects static metadata, not live query results.
+Other Consistency Indicators:
+
+Availability of RDF dump (query) is consistently False (no downloadable dump).
+SPARQL endpoint URL is stable (https://sparql-noipa.mef.gov.it/sparql).
+Conclusion:
+The live triple count from SPARQL queries fluctuates, likely due to data updates or corrections.
+The inconsistency implies dynamic changes in the underlying dataset.
+
+Metric	2025-05-04	2025-07-13	2025-08-03	2025-09-07
+Triples (SPARQL Query)	412,894,535	432,861,574	439,796,613	446,170,057
+Triples (Metadata)	340,000,000	340,000,000	340,000,000	340,000,000
+SPARQL Endpoint Status	Available	Available	Available	Available",1,1,1,,1,,,,,,
+TA_1,The number of triples of NoiPA retrieved via the SPARQL endpoint is constant?,"No, they slightly increase over time.","After analyzing the provided data, the number of triples retrieved via NoiPA's SPARQL endpoint is not constant. Here’s a breakdown:
+
+Key Observations
+Number of triples (query) Values
+
+2025-05-04: 412,894,535
+2025-07-13: 432,861,574
+2025-08-03: 439,796,613
+2025-09-07: 446,170,057
+Conclusion: The number of triples increases over time, indicating dataset updates.
+
+Number of triples (metadata) Values
+
+All dates (e.g., 2025-05-04, 2025-09-07): 340,000,000 (constant).
+This represents the metadata triples, not the queried data.
+Supporting Evidence
+
+Updates: Metrics like Percentage of data updated show nonzero values (e.g., 1.136889e-06% on 2025-08-03).
+Historical Updates: Records like ['2025-04-17|18', '2025-07-18|2'] confirm incremental changes.
+No RDF Dump: Availability of RDF dump (query) is False for all dates, meaning the dataset is dynamic (live endpoint only).
+Summary
+Not Constant: The SPARQL-retrieved triple count increases over time (e.g., ~5% growth from May to September 2025).
+Static Metadata: The metadata triple count (340,000,000) remains fixed.
+Metric	2025-05-04	2025-07-13	2025-08-03	2025-09-07
+Triples (SPARQL query)	412,894,535	432,861,574	439,796,613	446,170,057
+Triples (metadata)	340,000,000	340,000,000	340,000,000	340,000,000
+Endpoint Status	Available	Available	Available	Available
+RDF Dump Available?	False	False	False	False",1,1,1,,1,,,,,,
+TA_2,Is the SPARQL endpoint of DBLP always available?,Yes,"Based on the provided data, here is the analysis regarding the availability of the DBLP SPARQL endpoint (https://sparql.dblp.org/sparql):
+
+Consistent Availability:
+
+The SPARQL endpoint for dblp-kg is marked as ""Available"" on all checked dates:
+2025-08-03
+2025-09-07
+2025-07-13
+2025-05-04
+Endpoint URL:
+
+The endpoint URL https://sparql.dblp.org/sparql remains unchanged across checks.
+Metadata:
+
+The endpoint uses HTTP (not HTTPS), as indicated by ""Use HTTPS"": [""dblp-kg"",""False"",...].
+Requires no authentication (""Requires authentication"": [""dblp-kg"",""False"",...]).
+No RDF dump is available (""Availability of RDF dump (query)"": [""dblp-kg"",""False"",...]).
+Historical Consistency:
+
+No downtime or ""Offline"" status is reported in the examined timeframe.
+Conclusion
+🟢 Yes, according to the provided data from May 2025 to September 2025, the DBLP SPARQL endpoint (https://sparql.dblp.org/sparql) was always available. There are no records of outages or downtime in the dataset.
+
+
+{""Sparql endpoint"":[""dblp-kg"",""Available"",""2025-08-03""]}
+{""Sparql endpoint"":[""dblp-kg"",""Available"",""2025-09-07""]}
+{""Sparql endpoint"":[""dblp-kg"",""Available"",""2025-07-13""]}
+{""Sparql endpoint"":[""dblp-kg"",""Available"",""2025-05-04""]}
+{""SPARQL endpoint URL"":[""dblp-kg"",""https://sparql.dblp.org/sparql"",""2025-08-03""]}
+{""SPARQL endpoint URL"":[""dblp-kg"",""https://sparql.dblp.org/sparql"",""2025-09-07""]}
+{""SPARQL endpoint URL"":[""dblp-kg"",""https://sparql.dblp.org/sparql"",""2025-07-13""]}
+{""SPARQL endpoint URL"":[""dblp-kg"",""https://sparql.dblp.org/sparql"",""2025-05-04""]}
+{""Availability of RDF dump (query)"":[""dblp-kg"",""False"",""2025-09-07""]}
+{""Availability of RDF dump (query)"":[""dblp-kg"",""False"",""2025-08-03""]}
+{""Availability of RDF dump (query)"":[""dblp-kg"",""False"",""2025-07-13""]}
+{""Availability of RDF dump (query)"":[""dblp-kg"",""False"",""2025-05-04""]}
+{""Use HTTPS"":[""dblp-kg"",""False"",""2025-09-07""]}
+{""Requires authentication"":[""dblp-kg"",""False"",""2025-09-07""]}
+Caveats
+Data Scope: This analysis covers checks from May 2025 to September 2025. Latest real-world verification is recommended.
+Downtime Possibility: While the data shows perfect uptime, in practice, endpoints may experience brief outages (maintenance, upgrades, etc.).
+Auto-generated Data: The dates extend into 2025, suggesting synthetic/forward-projected data. Treat this as indicative, not absolute.",1,1,1,,1,,,,,,
+TA_2,Is the DBLP SPARQL endpoint always up?,Yes,"Based on the provided data, the DBLP SPARQL endpoint (https://sparql.dblp.org/sparql) is consistently reported as ""Available"" in all entries for the ""dblp-kg"" dataset across multiple dates (e.g., 2025-05-04, 2025-07-13, 2025-08-03, 2025-09-07).
+
+Key Observations:
+Status: All recent entries show status = [""dblp-kg"", ""Available""].
+URL: Valid endpoint URL confirmed at https://sparql.dblp.org/sparql.
+Performance:
+Low median latency (e.g., 0.2 ms as of 2025-09-07)
+High throughput (~6-7 requests/sec)
+HTTPS: Supports HTTPS (though one entry oddly reports Use HTTPS: False—likely a metadata error since the URL uses HTTPS).
+Reliability:
+Availability score: 0.975/1.000 (as of 2025-05-04)
+No authentication required.
+Limitations:
+This data uses future dates (e.g., 2025), suggesting synthetic/test data rather than real-time monitoring.
+Real-world uptime may vary slightly.
+Recommendation:
+Currently reachable?
+✅ Yes, based on the latest synthetic data, but verify directly via:
+
+
+# Quick liveness test
+SELECT (COUNT(*) AS ?triples) WHERE { ?s ?p ?o }
+For real-time status, visit the DBLP SPARQL endpoint or check public uptime monitors.",1,1,1,,1,,,,,,
+TA_3,Is the data dump of the Allie Abbreviation And Long Form dataset always set to 1 in the observed period?,"No, it is discontinuous","To determine whether the data dump score of the Allie Abbreviation And Long Form dataset is always set to 1 in the observed period, we analyze the relevant entries in the provided dataset. Here’s the breakdown:
+
+Key Observations
+Availability of RDF Dump (query endpoint):
+
+""Availability of RDF dump (query)"": [""allie-abbreviation-and-long-form-database-in-life-science"", ""False"", ""2025-06-01""]
+""Availability of RDF dump (query)"": [""allie-abbreviation-and-long-form-database-in-life-science"", ""False"", ""2025-08-03""]
+""Availability of RDF dump (query)"": [""allie-abbreviation-and-long-form-database-in-life-science"", ""-"", ""2025-09-07""]
+Inference: The RDF dump via the query endpoint is not consistently available (False or - across all dates).
+
+Availability of RDF Dump (metadata):
+
+""Availability of RDF dump (metadata)"": [""allie-..."", ""1.000000"", ""2025-06-01""]
+""Availability of RDF dump (metadata)"": [""allie-..."", ""1.000000"", ""2025-08-03""]
+""Availability of RDF dump (metadata)"": [""allie-..."", ""0.000000"", ""2025-09-07""]
+Inference: Metadata availability for the RDF dump drops to 0 on 2025-09-07.
+
+Offline Dumps (FTP availability):
+
+""Offline dumps"": [""allie-..."", ""['ftp://ftp.dbcls.jp/...']"", ""2025-06-01""] (present on all observed dates).
+Inference: Offline dumps via FTP URLs are consistently available (1.000000 implied).
+
+Conclusion
+No, the data dump availability (RDF dump) is not always set to 1 in the observed period:
+It is 1.0 for metadata on most dates but drops to 0.0 on 2025-09-07.
+The query endpoint availability is consistently False or unspecified (-).
+However, offline dumps (FTP) remain accessible throughout the period.
+Date	Availability (Metadata)	Availability (Query)	Offline Dumps
+2025-05-04	1.000000	False	✅ Available
+2025-06-01	1.000000	False	✅ Available
+2025-07-13	1.000000	False	✅ Available
+2025-08-03	1.000000	False	✅ Available
+2025-09-07	0.000000	- (unspecified)	✅ Available",1,1,1,,1,,,,,,
+TA_3,Is the data dump of the Allie Abbreviation And Long Form dataset always up?,"No, it is discontinuous","Based on the provided data dump, the Allie Abbreviation And Long Form dataset's RDF dump is not consistently available for download via direct queries or standard interfaces:
+
+Key Observations on Availability
+RDF Dump Availability:
+
+Consistently marked as False for all dates except 2025-09-07, where it is - (ambiguous/unavailable):
+
+{""Availability of RDF dump (query)"":[""allie-..."",""False"",""2025-06-01""]}
+{""Availability of RDF dump (query)"":[""allie-..."",""False"",""2025-07-13""]}
+{... ""False"" entries for all other dates...}
+{""Availability of RDF dump (query)"":[""allie-..."",""-"",""2025-09-07""]}
+Metadata RDF dumps are usually available (1.000000) except on 2025-09-07:
+
+{""Availability of RDF dump (metadata)"":[""allie-..."",""1.000000"",""2025-06-01""]}
+{""Availability of RDF dump (metadata)"":[""allie-..."",""0.000000"",""2025-09-07""]}
+Direct Download URLs:
+
+No downloadable URLs are provided in most entries (""URL for download the dataset"":[]), except on 2025-09-07, where an FTP dump is listed:
+
+{""Offline dumps"":[""allie-..."",""['ftp://ftp.dbcls.jp/allie/allie_rdf/allie_rdf_nt_latest.gz']"",""2025-09-07""]}
+No HTTPS or persistent HTTP links are provided for direct downloads.
+SPARQL Endpoint:
+
+The dataset has a working SPARQL endpoint (""Sparql endpoint"":[""Available"", ...]) on most dates except 2025-09-07, where it is marked as unavailable (-).
+Conclusion
+The dataset's RDF dump is not reliably ""always up"" for programmatic access. While metadata dumps and the SPARQL endpoint are generally available (except on 2025-09-07), the actual RDF data dump:
+
+Is explicitly flagged as unavailable (False) in availability queries.
+Lacks direct download URLs except for an FTP link on one date, suggesting irregular dumps.
+Recommendation
+For continuous access, use the SPARQL endpoint (http://data.allie.dbcls.jp/sparql) when available, or rely on manual downloads via the FTP link (ftp://ftp.dbcls.jp/allie/allie_rdf/allie_rdf_nt_latest.gz) if updated periodically.",1,1,1,,1,,,,,,
+TA_4,Is the accuracy of NoiPA constant over time?,No,"Analysis of NoiPA's Accuracy Over Time
+Based on the provided data, the accuracy of NoiPA is nearly constant but not perfectly constant over time. Here's a detailed breakdown:
+
+Key Observations
+Accuracy Scores:
+
+2025-05-04: 0.999700
+2025-07-13: 0.999660
+2025-08-03: 0.999660
+2025-09-07: 0.999660
+While the accuracy remains at 0.999660 for most dates, there is a slight increase to 0.999700 on 2025-05-04 (+0.004% variation).
+
+Consistency:
+All consistency scores for NoiPA are 0.400000 across all dates, indicating no variation in this metric.
+
+Other Stability Indicators:
+
+Verifiability: 0.498333 (constant).
+Normalized Score: 52.474–52.477 (minor variation).
+Date	Accuracy Score	Consistency Score	Verifiability Score
+2025-05-04	0.999700	0.400000	0.498333
+2025-07-13	0.999660	0.400000	0.498333
+2025-08-03	0.999660	0.400000	0.498333
+2025-09-07	0.999660	0.400000	0.498333
+Conclusion
+NoiPA's accuracy exhibits minimal fluctuations (Δ=0.004%), but the overall trend shows remarkable stability. This level of near-constancy suggests robust data quality maintenance over time. If high precision is critical, the system may require monitoring for these minor drifts.",1,1,1,,1,,,,,,
+TA_4,Does the accuracy of NoiPA remain consistent over time?,No,"Based on the provided data, NoiPA's accuracy remains extremely stable over time with only negligible variation observed. Here's a detailed analysis:
+
+📈 Accuracy Score Timeline
+Date	Accuracy Score	Variation
+2025-05-04	0.999700	+0.000040
+2025-07-13	0.999660	Baseline
+2025-08-03	0.999660	Identical
+2025-09-07	0.999660	Identical
+Key Observations
+Minimal Fluctuation
+
+The highest observed variation is 0.00004 (a 0.004% relative change) between May and later months.
+Scores cluster tightly around 0.99966±0.00002 (effectively ≥99.966% accuracy).
+Temporal Consistency
+No progressive drift or degradation is observed over the 4-month period. The scores stabilize after May 2025.
+
+Operational Significance
+This level of stability (σ=1.7×10 
+−5
+ ) is statistically negligible for practical purposes, indicating robust system performance.
+
+Consistency Score: Constant at 0.400 across all dates.
+FAIR Score: Ranges between 2.57-2.76, showing no correlation with accuracy variations.
+Performance Metrics: Latency (0.1-0.3s) and throughput (7-10 req/s) remain stable.
+Conclusion
+NoiPA demonstrates effectively constant accuracy over time, with measurement variations falling well within expected operational tolerances for high-availability systems. The observed ±0.004% fluctuation has no practical impact on system reliability.",1,1,1,,1,,,,,,
+TA_5,What is the longest continuous period in which the Allie Abbreviation And Long Form dataset data dump has been equals to 1?,91 days,"The longest continuous period during which the allie-abbreviation-and-long-form-database-in-life-science dataset had its Availability of RDF dump (metadata) metric equal to 1 spans 92 days.
+
+Key Data Points (where the value is 1.000000):
+
+2025-05-04
+2025-06-01
+2025-07-13
+2025-08-03
+End of Availability:
+
+The value drops to 0.000000 on 2025-09-07, marking the end of the period.
+Duration Calculation:
+
+From 2025-05-04 to 2025-08-03 (inclusive):
+May (4–31): 28 days
+June: 30 days
+July (1–13): 13 days
+August (1–3): 3 days
+Total: 28+30+13+3=92 days.
+Answer
+The dataset's RDF dump availability was continuously equal to 1 from May 4, 2025 to August 3, 2025, for a total of 92 days.",1,1,1,,1,,,,,,
+TA_5,"For how long, without interruption, has the Allie Abbreviation And Long Form dataset data dump remained up?",91 days,"From the provided dataset, the Allie Abbreviation And Long Form Database in Life Science (allie-abbreviation-and-long-form-database-in-life-science) has the following temporal characteristics:
+
+Initial Release Date:
+The dataset was first released on 2011-08-01, as indicated in multiple ""Age of data"" entries:
+
+
+{""Age of data"": [""allie-..."", ""2011-08-01"", ""2025-08-03""]},
+{""Age of data"": [""allie-..."", ""2011-08-01"", ""2025-07-13""]},
+...
+Uptime Analysis:
+
+All timestamps for ""Time elapsed since last modification"" show 0.000000, indicating no interruptions or modifications since its last recorded checkpoint (e.g., 2025-09-07 in the data dump).
+The ""Dataset update frequency"" is documented as ['Monthly'].
+Conclusion:
+The dataset has remained continuously operational without interruption since its release on August 1, 2011.
+
+Static since release:
+
+""_time_elapsed_since_last_modification_specified"": [""0.000000"", ""2025-09-07""]
+No reported downtime:
+All availability metrics (""Availability of RDF dump (query)"", etc.) are either ""Available"" or 1.000000 (boolean true).
+Update cadence:
+
+{""Dataset update frequency"": [""allie-..."", ""['Monthly']"", ""2025-08-03""]}
+Final Answer:
+The Allie dataset has been up without interruption for 14 years (since August 1, 2011) based on the provided metadata.",0,0,0,,0,,,,,,
+Co_1,Which dataset has the highest number of triples?,DBLP,"Based on the provided dataset metrics, the dblp Knowledge Graph (dblp-kg) has the highest number of triples. Here's the breakdown:
+
+Key Findings
+dblp-kg (dblp Knowledge Graph) has the highest ""Number of triples (query)"" recorded at:
+1,452,862,425 triples (2025-09-07)
+Previous entries include 1,448,894,292 (2025-08-03) and 1,446,280,845 (2025-07-13).
+Comparison with Other Datasets
+Dataset	Highest Number of Triples (Query)	Date	Source
+dblp-kg (dblp Knowledge Graph)	1,452,862,425	2025-09-07	SPARQL query
+NoiPA	446,170,057	2025-09-07	SPARQL query
+bpr	354,148,161	2025-09-07	SPARQL query
+allie-abbreviation...	309,315,740	2025-08-03	SPARQL query
+micro-coronavirus	80,929,914	2025-09-07	SPARQL query
+Focus on Query Metrics:
+The ""Number of triples (query)"" is prioritized, as it reflects the actual triple count retrieved from SPARQL endpoints (live data). Metadata-based counts (e.g., Number of triples (metadata)) are often lower or outdated.
+
+Handling Duplicate Entries:
+For datasets with multiple dates, the latest value was selected (e.g., dblp-kg's newest entry on 2025-09-07).
+
+Special Cases:
+The Coronavirus dataset is fragmented into sub-datasets (e.g., protein/gene metadata), but the aggregate (~81 million triples) is smaller than dblp-kg.
+
+Final Answer
+dblp-kg (dblp Knowledge Graph) has the highest number of triples, with 1.45 billion triples as of September 2025.",1,1,1,,1,,,,,,
+Co_1,Which is the biggest dataset among the compared ones?,DBLP,"To determine the biggest dataset among the compared ones, we analyzed the number of triples (a common proxy for dataset size) from the provided data. Here are the key findings:
+
+Largest Dataset: dblp-kg
+Number of Triples (Query): 1,452,862,425 (as of 2025-09-07)
+This is the highest value observed in the dataset comparisons.
+Comparison of Key Datasets:
+Dataset	Query Triples	Metadata Triples
+dblp-kg	1,452,862,425	0
+NoiPA	446,170,057	340,000,000
+bpr	354,148,161	366,800
+LemmaBank	Not specified	1,699,687
+w3c-wordnet	Not specified	710,000
+Key Observations:
+dblp-kg dominates by query triples.
+NoiPA has the highest metadata triples at 340,000,000, but its query triples are smaller than dblp-kg.
+Other datasets like CIDOC-CRM and micro-coronavirus had negligible or unspecified triples.
+This analysis aligns with the ""Amount of data"" dimension in the system, where the query triples serve as the primary indicator of dataset scale.",1,1,1,,1,,,,,,
+Co_2,Which is the dataset performing worst in the license metric?,CIDOC-CRM,"The dataset performing worst in the license metric is CIDOC-CRM, with a consistent Licensing score of 0.000000 across all recorded dates:
+
+
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-07-13""]}
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-05-04""]}
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-09-07""]}
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-08-03""]}
+Key Details:
+Licensing score dimensions (reference):
+Description: ""Overall score for the licensing dimension computed as a linear combination of the individual licensing metrics scores""
+Range: [0,1] (Best value: 1).
+Comparison with other datasets:
+Most datasets (e.g., bpr, NoiPA, w3c-wordnet) scored 0.500.
+micro-coronavirus scored 1.000.
+CIDOC-CRM is the only dataset with a score of 0.000.
+Supporting Metrics:
+CIDOC-CRM consistently failed license-retrieval tests (e.g., _machine_readable_license_metadata_is_retrievable = 0.000000), indicating critical licensing compliance issues. This likely caused its worst-case licensing score.",1,1,1,,1,,,,,,
+Co_2,Which is the worst performing dataset in the license metric?,CIDOC-CRM,"The worst performing dataset in the licensing metric is CIDOC-CRM, with a Licensing score of 0.000000 across all recorded dates.
+
+Analysis Details:
+Licensing Score Range:
+The licensing score is defined as a value in the range $[0, 1]$, where 1 is the best possible score.
+
+Dataset Comparison:
+
+CIDOC-CRM:
+Consistently scored 0.000000 across multiple evaluations (e.g., 2025-07-13, 2025-05-04, 2025-08-03, 2025-09-07).
+
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-07-13""]},
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-05-04""]},
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-08-03""]},
+{""Licensing score"":[""CIDOC-CRM"",""0.000000"",""2025-09-07""]}
+Other datasets (e.g., bpr, NoiPA, dblp-kg) scored 0.500000 or higher.
+Top-performing datasets like micro-coronavirus achieved 1.000000.
+Conclusion:
+CIDOC-CRM's consistent minimum score ($0.0$) makes it the worst performer in licensing metrics.
+
+Recommendation:
+Investigate why CIDOC-CRM lacks machine/human-readable licensing documentation, and ensure future datasets comply with licensing best practices (e.g., explicit license declarations in metadata/SPARQL endpoints).",1,1,1,,1,,,,,,
+Co_3,What is the mean score for the accuracy dimension?,0.50,"The mean Accuracy score across all datasets and recorded entries is calculated as follows:
+
+Extract all Accuracy scores from the provided data:
+
+
+NoiPA:               0.999660 (2025-08-03), 0.999660 (2025-09-07), 0.999660 (2025-07-13), 0.999700 (2025-05-04)
+bpr:                 0.600000 (2025-05-04), 1.000000 (2025-09-07), 1.000000 (2025-08-03), 1.000000 (2025-07-13)
+LemmaBank:           0.000000 (2025-09-07), 0.000000 (2025-08-03), 0.000000 (2025-07-13), 0.000000 (2025-05-04)
+w3c-wordnet:         0.000000 (2025-05-04), 0.000000 (2025-08-03), 0.000000 (2025-09-07), 0.000000 (2025-07-13)
+CIDOC-CRM:           0.000000 (2025-07-13), 0.000000 (2025-05-04), 0.000000 (2025-09-07), 0.000000 (2025-08-03)
+dblp-kg:             1.000000 (2025-09-07), 1.000000 (2025-08-03), 1.000000 (2025-05-04), 1.000000 (2025-07-13)
+allie-abbreviation:  1.000000 (2025-05-04), 1.000000 (2025-08-03), 1.000000 (2025-07-13), 0.000000 (2025-09-07)
+bbc-programmes:      0.000000 (2025-05-04), 0.000000 (2025-07-13), 0.000000 (2025-08-03), 0.000000 (2025-09-07)
+micro-coronavirus:   1.000000 (2025-07-13), 1.000000 (2025-05-04), 1.000000 (2025-08-03), 1.000000 (2025-09-07)
+Sum all scores:
+
+Total=(3⋅0.999660+0.999700) 
+NoiPA
+​
+ +(0.600000+3⋅1.000000) 
+bpr
+​
+ +(4⋅0.000000) 
+LemmaBank
+​
+ +(4⋅0.000000) 
+w3c-wordnet
+​
+ +⋯=18.6
+Count the number of entries: 36 scores.
+
+Compute the mean:
+
+Mean= 
+36
+18.6
+​
+ =0.516 
+6
+ 
+Final Result:
+
+Mean Accuracy Score = 0.517 (rounded to 3 decimal places).
+High-scoring datasets:
+dblp-kg and micro-coronavirus consistently scored 1.000.
+NoiPA scores were near-perfect (≥0.999660).
+Low-scoring datasets:
+LemmaBank, w3c-wordnet, CIDOC-CRM, and bbc-programmes scored 0.000.
+Variability: allie-abbreviation had inconsistent scores (three 1.000 and one 0.000).",0,0,0,,0,,,,,,
+Co_3,What is the mean value of the accuracy dimension?,0.50,"The mean value of the Accuracy dimension across all datasets is calculated by averaging all ""Accuracy score"" entries present in the provided data.
+
+Calculation Steps:
+Extract all ""Accuracy score"" values:
+There are 34 valid entries labeled with ""Accuracy score"" in the data.
+List of scores:
+[0.99966, 0.99966, 0.99966, 0.9997, 0.6, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+
+Compute the sum:
+Sum=3×0.99966+0.9997+0.6+3×1.0+4×1.0+3×1.0+4×1.0=18.59868
+
+Divide by the number of entries:
+Mean= 
+34
+Sum
+​
+ = 
+34
+18.59868
+​
+ ≈0.54702
+
+Result:
+Average Accuracy Score (Normalized):
+0.547
+​
+ 
+
+Interpretation: A mean value of 0.547 indicates moderate overall accuracy across datasets, with significant variability (e.g., NoiPA scores ~1.0, LemmaBank scores 0.0).
+Key Observations:
+High accuracy: NoiPA (consistently ~0.999), dblp-kg (1.0), micro-coronavirus (1.0).
+Low accuracy: LemmaBank, CIDOC-CRM, w3c-wordnet, bbc-programmes (all 0.0 or near-zero).
+Limitations: The mean is influenced by extreme values (e.g., perfect 1.0 and minimal 0.0 scores). A weighted average accounting for dataset size might refine insights.",0,0,0,,0,,,,,,
+Co_4,What is the best observed score in the Verifiability dimension?,"0.4983 (NoiPA, Allie, Bathing Water Quality)","Best Observed Verifiability Score
+The highest observed Verifiability score in the provided data is 0.498333, observed in two datasets:
+
+NoiPA Dataset
+
+Observed on multiple dates:
+2025-05-04
+2025-07-13
+2025-08-03
+2025-09-07
+allie-abbreviation-and-long-form-database-in-life-science Dataset
+
+Observed on:
+2025-05-04 (score: 0.165000)
+2025-06-01 (score: 0.498333)
+2025-07-13 (score: 0.498333)
+2025-08-03 (score: 0.498333)
+Key Observations:
+0.498333 is the maximum Verifiability score observed across all datasets and dates.
+The Verifiability dimension evaluates metrics like ""Sources"" (author/publisher metadata) and ""Signed"" (dataset signature status).
+The score range is normalized to [0,1], with 1.0 being ideal (not observed here).
+Dataset	Score	Date
+CIDOC-CRM	0.331667	2025-07-13
+bpr	0.110000	2025-07-13
+dblp-kg	0.331667	2025-07-13
+micro-coronavirus	0.331667	2025-07-13
+environment-agency-bathing-water-quality	0.498333	2025-05-04",0.5,1,1,,1,,,,,,
+Co_4,What is the highest observed Verifiability score?,"0.4983 (NoiPA, Allie, Bathing Water Quality)","The highest observed Verifiability score in the dataset is 0.498333, achieved by:
+
+Dataset	Score	Observation Dates
+NoiPA	0.498333	2025-05-04, 2025-07-13, 2025-08-03, 2025-09-07
+allie-abbreviation-and-long-form-database-in-life-science	0.498333	2025-07-13, 2025-08-03
+environment-agency-bathing-water-quality	0.498333	2025-05-04
+Key Notes:
+Verification: This score is observed 4 times for NoiPA, 2 times for allie-abbreviation-and-long-form-database-in-life-science, and 1 time for environment-agency-bathing-water-quality.
+Data Range: All Verifiability scores are in [0,1], with 1 being optimal.
+Other Scores: The next highest observed score is 0.331667 (for CIDOC-CRM, LemmaBank, etc.).
+For reference, here's the top 5 Verifiability scores observed:
+
+Rank	Score	Count	Example Dataset(s)
+1	0.498333	7	NoiPA, allie-abbreviation...
+2	0.331667	16	CIDOC-CRM, LemmaBank, micro-coronavirus
+3	0.165000	5	bpr (0.110000), bbc-programmes (0.165000)
+4	0.110000	4	bpr (multiple observations)
+5	0.000000	0	N/A (no zero scores observed for Verifiability)
+This summary reflects the highest verifiability metric across all evaluated datasets.",1,1,1,,1,,,,,,
+Co_5,What are the highest-performing dimensions in September 2025?,"License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability","""Highest-Performing Dimensions in September 2025
+Based on the dataset provided, the highest-performing dimensions in September 2025 (specifically on 2025-09-07) are:
+
+Performance
+
+Score: 1.000 (Maximum)
+Top Dataset: NoiPA and dblp-kg
+Timeliness
+
+Score: 1.000 (Maximum)
+Top Dataset: NoiPA
+Metric: Volatility Score (under Timeliness dimension)
+Currency
+
+Score: 1.000 (Maximum)
+Top Dataset: bpr
+1. Performance Dimension
+Metric: Performance score
+NoiPA: 1.000 (2025-09-07)
+dblp-kg: 1.000 (2025-09-07)
+bpr: 0.507500 (2025-09-07)
+2. Timeliness Dimension
+Metric: Volatility score
+NoiPA: 1.000 (2025-09-07)
+w3c-wordnet: 0.000000 (2025-09-07)
+cidoc-crm: 0.000000 (2025-09-07)
+3. Currency Dimension
+Metric: Currency score
+bpr: 1.000 (2025-09-07)
+NoiPA: 0.500 (2025-09-07)
+cidoc-crm: 0.000000 (2025-09-07)
+Other Notable Dimensions:
+Trust:
+Trust value metric (max: 0.750 for CIDOC-CRM, dblp-kg, NoiPA).
+Availability:
+Availability score metric (max: 0.500 for bpr, CIDOC-CRM, NoiPA).
+Key Insights
+Performance, Timeliness, and Currency achieve perfect scores (1.000) in September 2025.
+Top datasets (e.g., NoiPA, dblp-kg, bpr) drive these high-performances metrics.
+Other dimensions (like Trust and Availability) demonstrate moderate scores but are outpaced by the top 3 leaders.""",0.5,0.5,0.5,the first three are correct,"0.5",,,,,,
+Co_5,What are the dimensions performing better in September 2025?,"License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability","Based on the dataset dated September 2025 (primarily 2025-09-07), the following dimensions showed stronger performance compared to other periods or datasets:
+
+🔝 Top Performing Dimensions in September 2025
+Interpretability
+
+Score: 0.997892 for bpr (↑ from 0.997883 in July)
+Example metric:
+
+{""Interpretability score"":[""bpr"",""0.997892"",""2025-09-07""]}
+Trust
+
+Key datasets: dblp-kg and NoiPA consistently scored 0.750
+Metric:
+
+{""Trust value"":[""dblp-kg"",""0.750000"",""2025-09-07""]}
+Interlinking
+
+Improved interlinking completeness in bpr to 0.000010 (vs. 0.000000 previously):
+
+{""Interlinking score"":[""bpr"",""0.000010"",""2025-09-07""]}
+Performance Trends Over Time
+Dimension	Dataset	Sep 2025 Score	Jul/Aug 2025 Score	Trend
+Performance	NoiPA	1.000000	1.000000	→
+Availability	dblp-kg	1.000000	1.000000 (Aug)	→
+Currency	bpr	1.000000	1.000000	→
+Versatility	bpr	0.333333	0.333333	→
+Timeliness	bpr	0.000000	0.000000	→
+Key Insight: Most dimensions were stable, but Interpretability and Interlinking showed marginal gains.
+
+⚠️ Lower-Performing Dimensions
+Licensing: Score of 0.500000 for bpr (no improvement).
+Completeness: Zero scores across multiple datasets (e.g., NoiPA, CIDOC-CRM).
+📊 Methodology
+We identified dimensions with:
+
+Higher absolute scores in September 2025 vs. prior months.
+Relative improvements even if static elsewhere (e.g., Interlinking).
+Consistent high performance (e.g., Trust for dblp-kg).
+Formula for Trend Analysis:
+For each dimension D and dataset S, we compared:
+
+ΔD 
+S
+​
+ =D 
+Sep
+​
+ −D 
+prev
+​
+ 
+Dimensions with ΔD 
+S
+​
+ >0 were flagged as improving.
+
+Let me know if you need a deeper breakdown for specific datasets! 🧠",0,0,0,,0,,,,,,
+E&D_1,Why is the availability score equals to 1 for the DBLP dataset?,Because all the metrics in the availability dimension can be correctly computed,"The availability score of 1.000000 for the DBLP dataset (dblp-kg) occurs in entries like {""Availability score"":[""dblp-kg"",""1.000000"",""2025-08-03""]}. Here's why this happens:
+
+✅ Key Reasons for the Perfect Availability Score (1.0)
+Metadata-Based Availability:
+
+Availability of RDF dump (metadata) = 1.000000
+Indicates well-documented metadata about the RDF dump is always available.
+Availability for download (metadata) = 1.000000
+Metadata like licensing (Licensing score = 0.500000) and schema details are retrievable.
+SPARQL Endpoint Accessibility:
+
+Sparql endpoint = ""Available""
+The dataset is queryable via SPARQL (https://sparql.dblp.org/sparql), ensuring programmatic access.
+Proper Media Type Compliance:
+
+Availability of a common accepted Media Type = True
+Uses standard RDF serializations like RDF/XML, NTriples, or Turtle.
+URI Dereferenceability:
+
+F1-D URIs dereferenceability = 1.000000
+Unique URIs in the dataset resolve to valid data/resources (HTTP 200 OK).
+Dataset URL Stability:
+
+Dataset URL = https://dblp.org
+A persistent, working primary access point.
+⚠️ Caveats in Other Entries
+The score fluctuates to 0.750000 or 0.975000 in other entries due to transient failures in metrics like:
+
+Availability of RDF dump (query) = False (dump not downloadable).
+Availability VoID file = ""VoID file absent"" (Optional metadata file; not strictly required).
+However, the SPARQL endpoint availability and metadata compliance are sufficient to achieve a perfect 1.0 score when all critical components align.
+
+🧮 How the Score is Calculated
+The availability score aggregates sub-metrics such as:
+
+Metadata accessibility (e.g., RDF dump metadata, licensing info).
+Functional access points (e.g., SPARQL endpoint, dataset URL).
+Technical compliance (e.g., media types, URI dereferencing).
+When these components validate successfully, the score maximizes to 1.0.
+
+🗂️ Summary
+The DBLP dataset earns Availability = 1.0 when:
+
+Metadata is complete.
+SPARQL endpoint is online (primary access method).
+URIs resolve correctly.
+Standard formats are used.
+This reflects compliance with FAIR principles (e.g., F1, A1) for data accessibility.",0,0,0,,0,,,,,,
+E&D_1,Why does the DBLP dataset have an availability score of 1?,Because all the metrics in the availability dimension can be correctly computed,"Based on the provided dataset, the DBLP Knowledge Graph (dblp-kg) achieves an Availability Score of 1.000 (on specific dates like 2025-07-13 and 2025-08-03) due to fulfillment of the following FAIR criteria:
+
+Key Factors Contributing to Availability Score = 1.000
+🟢 A1-M: Metadata Availability via Working Primary Sources
+1.000000 on all dates
+
+Ensures metadata is retrievable via primary access points like SPARQL or web interfaces.
+🟢 F1-D: URIs Dereferenceability
+1.000000 on most dates (except 0.900000 on 2025-05-04)
+
+URIs resolve correctly, guaranteeing data accessibility via HTTP(S).
+🟢 Availability of RDF Dump (Metadata)
+1.000000 on all dates
+
+Metadata is available as an RDF dump (e.g., dblp.ttl.gz).
+🟢 A1-D: Working Access Point(s)
+1.000000
+
+SPARQL endpoint (https://sparql.dblp.org/sparql) and RDF dump (https://dblp.org/rdf/dblp.ttl.gz) are operational.
+🔴 Limitations Not Penalizing Availability
+
+Although Availability of RDF dump (query) and Availability for download (query) are False, these do not override compliance with working access points (e.g., SPARQL endpoint).
+⚠️ Licensing Limitations
+
+Licensing score is 0.500000, but this affects Reusability (R-score), not Availability (A-score).
+Formula Breakdown
+The Availability Score (A 
+score
+​
+ ) likely follows a weighted aggregation:
+A 
+score
+​
+ =∑(Sub-Availability Scores)⋅Bonuses/Penalties
+
+Major components include:
+
+Metadata Availability: A1-M=1
+Data Accessibility: A1-D=1
+URIs Dereferenceability: F1-D=1
+Result:
+A 
+score
+​
+ =1.000
+
+Conclusion
+DBLP achieves maximal availability due to functional endpoints, resolvable URIs, and metadata accessibility, despite minor limitations in query-based access. The score reflects compliance with FAIR-A principles.",0,0,0,,0,,,,,,
+E&D_2,Does a score of amount of data equals to 0 mean that the dataset is empty?,"No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata.","No, a score of 0.000000 in the Amount of data score does not necessarily mean the dataset is empty. Here's why:
+
+Key Findings
+Score Definition
+The ""Amount of data score"" is defined as:
+
+""Overall score for the amount of data dimension computed as a linear combination of individual metrics (e.g., number of triples, entities, properties). Output: [0, 1], where 1 is best.""
+
+A score of 0 indicates poor performance in this dimension, not absence of data.
+
+Contradictory Evidence from Data
+Metrics in your dataset explicitly show non-empty data for entries with ""Amount of data score"": 0.000000:
+
+For dblp-kg (score 0 on 2025-08-03):
+
+{""Number of triples (query)"":[""dblp-kg"",""1335106894.000000"",""2025-05-04""]}
+For bpr (score 0 on 2025-07-13):
+
+{""Number of labels/comments present on the data"":[""bpr"",""30576153.000000"",""2025-09-07""]}
+Possible Reasons for Low Scores
+
+Incomplete metrics (e.g., missing metadata, sparse interlinking).
+Subpar performance in critical metrics (e.g., low entity/triple diversity).
+Normalization artifacts (e.g., datasets may have data but fail to meet scoring thresholds).
+Conclusion
+A score of 0.000000 reflects structural/data quality issues—not emptiness. Datasets with low scores often still contain data, but they underperform in the evaluated criteria like completeness, interlinking, or metadata richness.
+
+For empty datasets, look for ""Number of triples"": 0 or ""entities"": 0 instead.",0.5,1,0.5,,"0.5",,,,,,
+E&D_2,"If the amount-of-data score is 0, does that mean the dataset contains no data?","No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata.","No, an ""Amount of data score"" of 0 does not necessarily mean the dataset contains absolutely no data. Instead, it indicates that the dataset scored the lowest possible value on the metrics used to evaluate ""Amount of data"" under the predefined scoring system. This could reflect:
+
+Extremely sparse data,
+Missing critical data elements (e.g., no triples, few entities, or insufficient metadata),
+Failure to meet minimal thresholds for data volume in the evaluation framework.
+Key Insights from the Provided Data:
+Definition of ""Amount of data score"":
+
+
+{
+  ""Amount of data score"": {
+    ""description"": ""Overall score for the amount of data dimension computed as a linear combination of the individual amount of data metrics scores"",
+    ""input"": ""Amount of data metrics scores"",
+    ""output"": ""[0,1]. Best value: 1."",
+    ""dimension"": ""Amount of data""
+  }
+}
+Scores close to 0 reflect poor performance in data volume metrics (e.g., low triple counts, missing entities).
+Examples in Your Data:
+
+No dataset here has an ""Amount of data score"" of exactly 0, but several score 0.333 (e.g., CIDOC-CRM, LemmaBank), indicating low-but-nonzero data.
+Scores near 0 would likely result from metrics like:
+""Number of triples (query)"": ""None"" (e.g., for bbc-programmes)
+""Number of entities"": ""None"" (e.g., for w3c-wordnet).
+Contrast with ""Completeness score"":
+
+Datasets like dblp-kg have a ""Completeness score"" of 0.000 but still have an ""Amount of data score"" of 0.333, proving:
+Completeness ≠ Amount: A dataset can have data (non-zero amount) but fail completeness checks (e.g., missing metadata).
+Summary Table
+Score	Meaning	Example in Data
+Amount of data = 0	Minimal/no data by evaluation metrics (e.g., no triples, entities). May have partial data.	Not observed in this dataset
+Amount of data > 0	Some data exists, but score reflects volume against benchmarks (e.g., CIDOC-CRM = 0.333).	""CIDOC-CRM"": 0.333
+Completeness = 0	Data exists, but critical metadata/dimensions are missing (e.g., labels, interlinking).	""dblp-kg"": 0.000
+Conclusion:
+A score of 0 in Amount of data strongly suggests inadequate data volume, but it does not guarantee total emptiness. Always check related metrics (e.g., Number of triples, Number of entities) for explicit confirmation.",0,0,0.5,,0,,,,,,
+E&D_3,"When the availability score is 1, does it mean that both the SPARQL endpoint and the data dump are working?",Yes,"The availability score aggregates metrics related to the accessibility of SPARQL endpoints and RDF data dumps. Based on the provided data and the definition of A1-D Working access point(s), here's the breakdown:
+
+A1-D Working access point(s) Definition:
+
+Output:
+1 = Operational SPARQL endpoint or accessible RDF dump
+0.5 = Partially accessible endpoint/dump
+0 = Neither works
+Implication: A score of 1 indicates at least one functional access point (either SPARQL or dump).
+Availability score Calculation:
+
+Combines multiple availability metrics (e.g., SPARQL uptime, RDF dump download capability, metadata availability).
+A score of 1 means all availability-related metrics are optimal, including both SPARQL and RDF dump accessibility.
+Key Conclusion:
+If Availability score = 1, both the SPARQL endpoint and RDF data dump are functional and meet the highest accessibility standards.
+If only one access point works, the score would be <1 (e.g., 0.5).
+Example from Data:
+dblp-kg has an Availability score of 0.975 (near-maximum), indicating both endpoints and dumps are working but minor imperfections exist.
+No dataset in the provided data achieved a score of 1, reinforcing that it requires rigorous availability compliance.
+SPARQL Endpoint Status:
+
+Available: Endpoint is online.
+Offline: Endpoint is unresponsive.
+-: Endpoint not provided.
+RDF Dump Availability:
+
+1 (Online), 0 (Offline), or -1 (Missing).
+Cross-Verification:
+
+A dataset with Availability score = 1 must have:
+Sparql endpoint = Available or Availability of RDF dump = 1.
+No critical failures in other availability metrics (e.g., metadata links, HTTPS support).",0,0.5,0.5,mention to metrics not in availability dimension,"0.5",,,,,,
+E&D_3,"if the availability score is 1, does that mean both the SPARQL endpoint and the data dump are up?",Yes,"To determine whether an availability score of 1 indicates both the SPARQL endpoint and the data dump are operational, let's analyze the provided data definitions and observation records.
+
+Key Findings
+""A1-D Working access point(s)""
+Output: 1: operational SPARQL OR accessible data dump
+This means a score of 1 here indicates at least one access method (SPARQL endpoint or data dump) is functional.
+
+""Availability score""
+Description:
+
+""Overall score for the availability dimension computed as a linear combination of the individual availability metrics scores""
+Output: [0,1]. Best value: 1.
+
+Observations (e.g., ""dblp-kg""):
+
+When both SPARQL endpoint = ""Available"" and ""Availability of RDF dump (metadata)"" = 1, ""Availability score"" = 1.
+When only one is available (e.g., ""bpr""), the score is 0.5.
+The dataset ""dblp-kg"" achieves an availability score of 1.0 (e.g., ""Availability score"":[""dblp-kg"",""1.000000"",""2025-08-03""]) when:
+
+""Sparql endpoint"": [""dblp-kg"",""Available"",...]
+""Availability of RDF dump (metadata)"":[""dblp-kg"",""1.000000"",...]
+In contrast, datasets like ""bpr"" score 0.5 when only the SPARQL endpoint is Available (""False"" for the dump).
+
+Answer
+Yes, an availability score of 1 means both the SPARQL endpoint and RDF data dump are operational and accessible.
+
+Explanation
+The overall ""Availability score"" integrates metrics like ""Sparql endpoint"" and ""Availability of RDF dump"".
+Perfect score (1) requires both to be online (""Available"" for SPARQL and 1 for the dump), as seen in ""dblp-kg"".
+A score of 0.5 implies only one access point works (e.g., SPARQL endpoint up but dump missing/offline, as in ""bpr"").
+Formula (Logic)
+Availability Score={ 
+1
+<1
+​
+  
+if SPARQL = Available ∧ RDF dump = Online
+otherwise
+​
+ 
+
+
+
+
+
+
+
+
+
+
+",1,0.5,0.5,mention to metrics not in availability dimension,"0.5",,,,,,
+E&D_4,"if license is set to 1, does it mean that an open license is used?","No, it means that a license is specified","Based on the provided dataset, a license metric value of 1 confirms that a machine- or human-readable license is explicitly retrievable, but does not guarantee the license is ""open"" by default. Here's the breakdown:
+
+Metric: R1.1 Machine- or human-readable license retrievable via any primary source
+
+Output:
+1: License explicitly reported.
+0: Otherwise.
+Dimension: FAIR.
+A value of 1 means the license exists and is retrievable, but not necessarily ""open"".
+Open Licenses
+Are defined by standard licenses like:
+
+Creative Commons (CC-BY, CC0, CC-BY-SA)
+Apache 2.0
+Open Government Licence (OGL)
+Example URIs in the dataset:
+http://www.opendefinition.org/licenses/cc-zero
+https://creativecommons.org/licenses/by/4.0/
+https://www.apache.org/licenses/LICENSE-2.0
+Licenses with R1.1 = 1 (retrievable) are often (but not always) open:
+
+Datasets with R1.1 = 1 (e.g., bpr, LemmaBank, w3c-wordnet) use open licenses like:
+http://www.opendefinition.org/licenses/cc-by-sa (CC-BY-SA)
+http://www.opendefinition.org/licenses/cc-zero (CC0)
+https://creativecommons.org/licenses/by/3.0/deed.it (CC-BY 3.0)
+Open licenses dominate the datasets with R1.1 = 1, but non-open licenses could theoretically score 1 if retrievable.
+Counterexamples:
+
+CIDOC-CRM has R1.1 = 0 (license not retrievable) and no open license URI.
+All datasets with Licensing score = 1 (e.g., micro-coronavirus) use open licenses (e.g., http://creativecommons.org/licenses/by/4.0/).
+Final Answer
+Yes, when license = 1 (i.e., retrievable), the license is typically open in this dataset.
+All licenses marked with R1.1 = 1 in the provided records are standard open licenses (e.g., CC-BY, Apache 2.0), but the value 1 itself strictly indicates retrievability, not openness.
+
+Dataset	License URI	License Type
+bpr	http://www.opendefinition.org/licenses/cc-by-sa	CC-BY-SA
+dblp-kg	http://www.opendefinition.org/licenses/cc-zero	CC0
+micro-coronavirus	http://creativecommons.org/licenses/by/4.0/	CC-BY 4.0
+LemmaBank	http://www.opendefinition.org/licenses/cc-by-sa	CC-BY-SA",1,1,1,,1,,,,,,
+E&D_4,"If license is set to 1, does it mean that an open license is used?","No, it means that a license is specified","Based on the provided dataset, when the ""R1.1 Machine- or human-readable license retrievable via any primary source"" field is set to 1, it explicitly means that a license is explicitly reported, but this does not inherently confirm that an open license is used.
+
+Key Details:
+Metric Definition:
+
+Input: ""(Meta)data""
+Output: 1: license explicitly reported; 0: otherwise
+Dimension: FAIR
+Purpose: Checks if license metadata is retrievable, not whether the license itself is ""open.""
+Licensing Observations:
+
+Dataset entries like bpr, dblp-kg, or LemmaBank have R1.1 = 1.000000, indicating their licenses are machine- or human-readable and retrievable.
+However, the specific license type (e.g., Apache 2.0, CC-Zero, CC-BY-SA) determines openness. For example:
+bpr uses http://www.opendefinition.org/licenses/cc-by-sa (Creative Commons Attribution-ShareAlike, open).
+dblp-kg uses https://creativecommons.org/publicdomain/zero/1.0/ (CC0, open).
+Scores:
+
+A ""Licensing score"" of 0.5 (e.g., bpr, LemmaBank) suggests partial compliance with licensing best practices. This could mean:
+Only metadata is retrievable, but not via query endpoints.
+No human-readable license documentation exists (e.g., bpr has ""License human redeable"": [""-"", ""False""]).
+Conclusion:
+R1.1 = 1 confirms a license is explicitly reported, but openness depends on the license type (e.g., CC-BY, Apache 2.0).
+To verify openness, check the actual license URL (e.g., ""http://creativecommons.org/licenses/by/4.0/"" is open, while proprietary licenses are not listed here).
+Metrics Structure:
+
+{""R1.1 Machine- or human-readable license retrievable via any primary source"": 
+  {""output"": ""1: license explicitly reported; 0: otherwise"", ...}
+}
+Dataset Example:
+License metadata retrieval:
+
+{""_machine_readable_license_metadata_is_retrievable"": [""bpr"", ""1.000000"", ...]}
+License type:
+
+{""License machine redeable (metadata)"": [""bpr"", ""http://www.opendefinition.org/licenses/cc-by-sa"", ...]}
+Licensing Scores:
+
+{""Licensing score"": [""bpr"", ""0.500000"", ...]}  # Half compliance (e.g., missing human-readable)",1,1,1,,1,,,,,,
+E&D_5,"If verifiability is set to 1, does it mean that all information about providers are set?",Yes,"No, setting the Verifiability score to 1 does not necessarily mean all provider information is fully set. The score aggregates multiple metrics, some of which may be incomplete even if the overall score is maximal. Here’s why:
+
+Key Observations:
+Verifiability Score Calculation
+
+The score is a linear combination of sub-metrics (e.g., provider trust, dataset signature, source attribution).
+Example: For CIDOC-CRM, the score is 0.331667, but its Is on a trusted provider list is False.
+Constraint: Individual Metrics ≠ Perfect
+
+Even with a perfect Verifiability score (1.0), some provider-related metrics might still return False or missing data if they are not critical to the weighted calculation.
+For instance, ""environment-agency-bathing-water-quality"" is marked trusted (""Is on a trusted provider list"": ""True""), yet its Verifiability score is only 0.165 – indicating other metrics lowered the aggregate.
+Verifiability Metrics
+The score depends on:
+
+Is on a trusted provider list
+Signed (dataset cryptographic signature)
+Sources (author/publisher metadata)
+Author (metadata)
+Publisher
+Contributor
+Other trust/identity signals.
+Edge Cases
+
+A dataset with all verifiability metrics passing would score 1.0, but based on the data, no provider achieves this.
+For example, bpr consistently scores 0.110000 despite partial compliance.
+Verdict:
+A Verifiability score of 1.0 would reflect optimal performance across evaluated metrics, but not necessarily every traceable detail about providers. Partial information gaps can still exist if they do not dominantly impact the scoring formula.
+
+Recommendation:
+Audit the weights of individual Verifiability sub-metrics if full provider transparency is required, as high-level scores may mask granular deficiencies.
+
+Metric	Input	Output	Dimension
+Is on a trusted provider list	Metadata	Boolean (True/False)	Believability
+Signed (dataset)	Metadata	Boolean (True/False)	Verifiability
+Sources	Metadata	String (or False if absent)	Verifiability
+Author (metadata)	SPARQL/VoID	List (or False/-)	Verifiability
+Publisher	SPARQL/VoID	List (or False/-)	Verifiability
+Contributor	SPARQL/VoID	List (or False/-)	Verifiability",0,0,0,,0,,,,,,
+E&D_5,"If the verifiability score is 1, does it mean that all provider information is available?",Yes,"No, a Verifiability Score of 1 does not inherently guarantee that all provider information is available. Instead, it indicates that the dataset achieves the highest possible score based on the specific verifiability metrics evaluated (e.g., completeness of metadata, trusted provider status, clarity of sources). Here's why:
+
+Key Analysis:
+Verifiability Score Definition:
+
+
+{
+  ""Verifiability score"": {
+    ""description"": ""Overall score for the verifiability dimension..."",
+    ""input"": ""Verifiability metrics scores"",
+    ""output"": ""[0,1]. Best value: 1."",
+    ""dimension"": ""Verifiability""
+  }
+}
+It is a linear combination of individual verifiability metrics (e.g., Sources, Is on a trusted provider list, Author (metadata)).
+Primary Metrics Under Verifiability:
+
+Is on a trusted provider list: Boolean (True/False).
+Sources: Checks if authors, contributors, publishers, and sources are documented.
+Author (metadata) / Publisher: Metadata completeness checks.
+None of these metrics require perfect scores in all sub-criteria to achieve a composite score of 1.
+Evidence from Data:
+
+Example: CIDOC-CRM has a verifiability score of 0.331667 but:
+Is on a trusted provider list: False (all dates).
+Sources: ""Web:https://cidoc-crm.org/ Name: Email:"" (incomplete email).
+Even high verifiability scores (e.g., NoiPA with 0.498333) still show False for Is on a trusted provider list.
+Mathematical Interpretation:
+
+Let the verifiability score V be:
+V= 
+i=1
+∑
+n
+​
+ w 
+i
+​
+ ⋅m 
+i
+​
+ 
+where w 
+i
+​
+  are weights and m 
+i
+​
+  are normalized metric scores (0≤m 
+i
+​
+ ≤1).
+V=1 does not imply m 
+i
+​
+ =1 for all i (some metrics may be weighted less or compensated by others).
+When Does V=1 Imply Full Provider Information?
+Metric	Required for V=1?	Example Constraints
+Is on a trusted provider list	Yes	Must be True (weighted heavily in some frameworks).
+Sources	Partial	Some implementations accept partial metadata (e.g., missing emails).
+Author (metadata)	Partial	May tolerate absent fields if other metadata compensates.
+Conclusion:
+A Verifiability Score of 1 means the dataset meets the defined thresholds for its composite metrics, but not necessarily that every provider detail is exhaustively available. Always check the underlying metrics (e.g., Is on a trusted provider list = True, Sources = explicit) for full transparency.
+
+
+{""Verifiability score"":[""CIDOC-CRM"",""0.331667"",""2025-09-07""]}
+{""Is on a trusted provider list"":[""CIDOC-CRM"",""False"",""2025-09-07""]}
+{""Sources"":[""CIDOC-CRM"",""Web:https://cidoc-crm.org/ Name: Email:"",""2025-09-07""]}
+Score ≠ 1 due to incomplete Sources and Is on a trusted provider list = False.",0,0,0,,0,,,,,,

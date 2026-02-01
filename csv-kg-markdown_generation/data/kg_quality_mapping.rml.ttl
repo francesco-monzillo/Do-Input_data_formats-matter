@@ -1,0 +1,154 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.org/vocab/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@base <http://example.org/mapping/> .
+
+# -------------------------------
+# Dataset mapping
+# -------------------------------
+<#DatasetMapping>
+    a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "kg_quality_melted_for_rml.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/dataset/{KG id}";
+        rr:class void:Dataset
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dct:title;
+        rr:objectMap [ rr:column "KG name" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dct:description;
+        rr:objectMap [ rr:column "Description" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate void:sparqlEndpoint;
+        rr:objectMap [ rr:column "SPARQL endpoint URL" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:hasQualityMeasurement ;
+        rr:objectMap [ rr:template "http://example.org/measurement/{KG id}/{Analysis date}/{metric}" ]
+    ].
+
+
+# -------------------------------
+# Quality categories mapping
+# -------------------------------
+<#QualityCategoriesMapping>
+    a rr:TriplesMap;
+    rml:logicalSource [ 
+        rml:source "kg_quality.csv"; 
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/Quality-Category/{Category}";
+        rr:class dqv:Category ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:prefLabel ;
+        rr:objectMap [
+            rr:column "Category" ;
+            rr:language "en"
+        ]
+    ].
+
+# -------------------------------
+# Quality dimensions mapping
+# -------------------------------
+<#QualityDimensionsMapping>
+    a rr:TriplesMap;
+    rml:logicalSource [ 
+        rml:source "kg_quality.csv"; 
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/Quality-Dimension/{Dimension}";
+        rr:class dqv:Dimension ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:prefLabel ;
+        rr:objectMap [
+            rr:column "Dimension" ;
+            rr:language "en"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:inCategory;
+        rr:objectMap [ rr:template "http://example.org/Quality-Category/{Category}" ]
+    ].
+
+<#QualityMetricMapping>
+    a rr:TriplesMap;
+    rml:logicalSource [ 
+        rml:source "kg_quality.csv"; 
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/Quality-Metric/{metric}";
+        rr:class dqv:Metric ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:prefLabel ;
+        rr:objectMap [
+            rr:column "metric_description" ;
+            rr:language "en"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:InputToCompute ;
+        rr:objectMap [
+            rr:column "metric_input" ;
+            rr:language "en"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:MetricOutput ;
+        rr:objectMap [
+            rr:column "metric_output" ;
+            rr:language "en"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:inDimension;
+        rr:objectMap [ rr:template "http://example.org/Quality-Dimension/{Dimension}" ]
+    ].
+
+
+# -------------------------------
+# Quality measurement template
+# -------------------------------
+# Helper macro for each metric
+# Assumes CSV has columns: KG id, Analysis date (or Modification date), metric, value
+<#MeasurementMapping>
+    a rr:TriplesMap;
+    rml:logicalSource [ rml:source "kg_quality.csv"; rml:referenceFormulation ql:CSV ];
+    rr:subjectMap [
+        rr:template "http://example.org/measurement/{KG id}/{Analysis date}/{metric}";
+        rr:class dqv:QualityMeasurement
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:computedOn;
+        rr:objectMap [ rr:template "http://example.org/dataset/{KG id}" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate prov:generatedAtTime;
+        rr:objectMap [ rr:column "Analysis date"; rr:datatype xsd:date ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:isMeasurementOf;
+        rr:objectMap [ rr:template "http://example.org/Quality-Metric/{metric}" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate dqv:value;
+        rr:objectMap [ rr:column "metric_value_rml"; ]
+    ].
