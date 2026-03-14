@@ -19,8 +19,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 client = OpenAI(
     #base_url="http://localhost:8000/v1",
-    #base_url = "https://lightning.ai/api/v1/",
-    #api_key = os.environ["Lightning_AI_LLMS_API_KEY"]+"/namespaceName/name_of_project"  # vLLM requires a key but doesn't validate it by default
+    base_url = "https://lightning.ai/api/v1/",
+    api_key = os.environ["Lightning_AI_LLMS_API_KEY"]+"/fracmonz2/financial-llm-training-project"  # vLLM requires a key but doesn't validate it by default
 )
 
 # llm_client = LLM(model="openai/gpt-5-mini", api_key="f7***c60")
@@ -87,6 +87,9 @@ with open("./questions/questions.tsv", "r") as f:
                 for i, hypergraph_representation in enumerate(representations_list):
                     good_ending = False
 
+                    if i < 5:
+                        continue
+
                     while not good_ending:
                         try:
                             
@@ -94,7 +97,7 @@ with open("./questions/questions.tsv", "r") as f:
                             internal_folder = ""
 
                             if i == 0:
-                                internal_folder = "Normal"
+                                internal_folder = "4_uniform"
                             elif i == 1:
                                 internal_folder = "Time-labeled"
                             elif i == 2:
@@ -102,7 +105,7 @@ with open("./questions/questions.tsv", "r") as f:
                             elif i == 3:
                                 internal_folder = "KG-labeled"
                             elif i == 4:
-                                internal_folder = "Measure-value-labeled"
+                                internal_folder = "Value-labeled"
                             elif i == 5:
                                 internal_folder = "CSV"
                             elif i == 6:
@@ -116,6 +119,18 @@ with open("./questions/questions.tsv", "r") as f:
                                 sub_directory_in_relevant_chunks = "baselines/"
 
 
+                            j = i
+
+                            if i == 5:
+                                i = 0
+
+                            if i == 6:
+                                i = 1
+                            
+                            if i == 7:
+                                i = 2
+
+
                             relevant_chunks_file_path = f"./RELEVANT_CHUNKS_FOR_EACH_QUESTION/{sub_directory_in_relevant_chunks}{documentation_path}/{sub_folder}/{internal_folder}/relevant_chunks_{i}_question_{sentences[0][0:len(sentences[0]) - 1]}_request_{request_string}.txt"
 
                             relevant_chunks = None
@@ -124,7 +139,8 @@ with open("./questions/questions.tsv", "r") as f:
                                 relevant_chunks = rel_chunks_file.read()
 
                             response = client.chat.completions.create(
-                                model="your_favourite_model",
+                                model="your_model",
+                                reasoning_effort= "high",
                                 messages=[
                                     {
                                         "role": "user", 
@@ -139,7 +155,7 @@ with open("./questions/questions.tsv", "r") as f:
 
                             print("Response:\n" + final_response)
 
-                            response_path = f"./responses/your_model_name/{sub_directory_in_relevant_chunks}with_{documentation_path}/{internal_folder}_hg_responses.txt"
+                            response_path = f"./responses/kimi_k2.5/{sub_directory_in_relevant_chunks}with_{documentation_path}/{internal_folder}_hg_responses.txt"
 
                             with open(response_path, "a", encoding="utf-8") as response_file:
                                 response_file.write(f"Question: {sentences[0]}\nRequest: {request}\nExpected Response: {sentences[3]}\nResponse:\n{final_response}\n\n")
@@ -150,5 +166,6 @@ with open("./questions/questions.tsv", "r") as f:
                         except Exception as e:
                             print("timeout...Retry")
                             print(e)
+                            i = j
 
                             time.sleep(20)
