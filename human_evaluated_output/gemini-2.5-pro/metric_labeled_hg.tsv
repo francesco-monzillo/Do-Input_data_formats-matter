@@ -1,0 +1,379 @@
+Question_ID	Request	Expected_Response	Actual_Response	Voter 1	Voter 2	Voter 3	COMMENT	FINAL						
+IR_1	Retrieve the SPARQL endpoint status of NoiPA in the date September 7th, 2025?	On	The SPARQL endpoint status for NoiPA on September 7th, 2025 was "Available".
+	1	1	1		1						
+IR_1	Is the NoiPA SPARQL endpoint up in the last assessment?	On	Yes, in the last assessment on 2025-09-07, the NoiPA SPARQL endpoint was Available.
+	1	1	1		1						
+IR_2	Which is the amount of data of the LiLa Lemma Bank dataset?	1,699,687	
+ Based on the provided text, here are the measures related to the amount of data for the LiLa Lemma Bank dataset:
+ Number of triples (metadata): 1,699,687
+ Number of triples linked: 3,318,298
+ Amount of data score: 0.333333
+ Degree of connection: 21.0
+ Number of entities: None
+ External links:
+ LASLA: 1,745,314
+ AugustiniConfessiones: 77,580
+ CompHistSem: 1,058,077
+ CorpusFibonacci: 16,117
+ DanteLatinLoanwords: 765
+ EtymologicalDictionaryofLatin: 1,452
+ IGVLL: 1,759
+ IndexThomisticusTreebank: 403,526
+ LatinAffectus: 5,172
+ LatinWordnetLiLa: 8,536	0,5	1	1	correct, but too many details	1						
+IR_2	How many triples does LiLa Lemma Bank have?	1,699,687	
+ Based on the provided text, LiLa Lemma Bank has the following triple counts:
+ Number of triples (metadata): 1,699,687
+ Number of triples linked: 3,318,298
+ The total number of triples from a direct query ("Number of triples (query)") is listed as "None".	1	1	1		1						
+IR_3	Which is the license of the DBLP dataset?	CC-0	
+ Based on the provided text, the DBLP dataset (dblp-kg) is licensed under the Creative Commons Zero (CC0) license, which is a public domain dedication.
+ This is indicated by multiple entries, such as:
+ (Measure) Label: License machine redeable (metadata) for the dblp-kg dataset has a measure value of http://www.opendefinition.org/licenses/cc-zero.
+ (Measure) Label: License machine redeable (query) for the dblp-kg dataset has a measure value of https://creativecommons.org/publicdomain/zero/1.0/.	1	1	1		1						
+IR_3	How is DBLP licensed?	CC-0	Based on the provided data, the DBLP Knowledge Graph (dblp-kg) is licensed under the Creative Commons Zero (CC0) / Public Domain license.
+ This is indicated by the following entries:
+ License machine readable (metadata): http://www.opendefinition.org/licenses/cc-zero
+ License machine readable (query): https://creativecommons.org/publicdomain/zero/1.0/	1	1	1		1						
+IR_4	Which is the accuracy score of WordNet?	0.00	Based on the provided data, the Accuracy score for WordNet (dataset: w3c-wordnet) is 0.000000.
+ This score is consistent across all recorded timestamps for that dataset.	1	1	1		1						
+IR_4	How accurate is WordNet?	0.00	
+ Based on the provided text, the accuracy score for WordNet (specifically the w3c-wordnet dataset) is 0.000000.
+ This is shown in multiple entries, such as:
+ "(Measure) Label: Accuracy score":["measure value: 0.000000","timestamp: 2025-09-07","dataset: w3c-wordnet"]	1	1	1		1						
+IR_5	What is the trust value of the Linked Open Camera dataset?	0.5	
+ Based on the provided text, the trust value of the Linked Open Camera dataset (identified as bpr with the SPARQL endpoint http://dati.camera.it/sparql) is 0.500000.
+ This value is consistent across all recorded timestamps for that dataset:
+ timestamp: 2025-09-07
+ timestamp: 2025-08-03
+ timestamp: 2025-07-13
+ timestamp: 2025-06-01
+ timestamp: 2025-05-04	1	1	1		1						
+IR_5	How trustworthy is the Linked Open Camera dataset?	0.5	
+ Based on the provided data, here is an assessment of the trustworthiness of the Linked Open Camera dataset, which is identified in the file as dataset: bpr.
+ The data suggests a mixed but generally positive profile for this dataset. It excels in areas of technical accessibility, security, and licensing but shows weaknesses in verifiability, reputation, and has a noted issue with "Ontology Hijacking."
+ The most recent data available is from 2025-09-07.
+ Summary of Key Findings
+ Metric Latest Value (as of 2025-09-07) Interpretation
+ Trust value 0.500000 Moderate. This is a direct, aggregated measure of trust.
+ Believability score 0.500000 Moderate.
+ Verifiability score 0.110000 Very Low. Indicates difficulty in verifying the data's origins or correctness through provided metadata.
+ Reputation score 0.000008 Extremely Low. Suggests the dataset has a very low reputation based on the scoring model used.
+ Ontology Hijacking problem True Significant Concern. This indicates the dataset may be using terms from external vocabularies in a way that is inconsistent with their original meaning, which can cause semantic interoperability issues.
+ Accuracy score 1.000000 Excellent. This specific accuracy metric is perfect.
+ Consistency score 0.499035 Moderate. Suggests some internal inconsistencies may be present.
+ Security score 1.000000 Excellent. The dataset follows security best practices.
+ SPARQL endpoint http://dati.camera.it/sparql Excellent. The endpoint is available, making the data highly accessible.
+ Licensing CC-BY-SA Excellent. A clear, machine-readable, and open license is provided.
+ Detailed Breakdown
+ 1. Trust and Believability
+ The dataset has moderate direct scores for trust and believability.
+ Trust value: 0.500000
+ Believability score: 0.500000
+ However, a significant issue flagged is the "Ontology Hijacking problem," which is marked as True. This is a major concern for trustworthiness, as it implies that the data might not be semantically sound or interoperable as expected.
+ 2. Verifiability and Reputation
+ This is the weakest area for the dataset.
+ Verifiability score: 0.110000 (Very Low)
+ Reputation score: 0.000008 (Extremely Low)
+ These scores suggest that while the data is available, its provenance, authoritativeness, and standing within the community are poorly documented or rated according to the evaluation metrics.
+ 3. Accuracy and Consistency
+ The results here are mixed.
+ Accuracy score: 1.000000 (Excellent)
+ Consistency score: 0.499035 (Moderate)
+ While one measure of accuracy is perfect, the moderate consistency score indicates potential internal contradictions or formatting irregularities within the dataset.
+ 4. Accessibility and Availability
+ The dataset scores exceptionally well in this dimension.
+ SPARQL endpoint URL: The endpoint http://dati.camera.it/sparql is consistently available.
+ URL for download the dataset: A very extensive list of download links for various RDF and CSV files is provided, making the full dataset highly accessible.
+ Metadata Availability: The A1-M Metadata availability via working primary sources score is 1.000000, confirming that metadata is readily available.
+ 5. Security
+ Security is a strong point for this dataset.
+ Security score: 1.000000 (Excellent)
+ A1.2 Authentication & HTTPS support: The score is 1.000000, indicating the service uses HTTPS, which is a critical security best practice.
+ 6. Licensing
+ The dataset's licensing is clear and open, which is a positive factor for trust and reusability.
+ License machine redeable (metadata): http://www.opendefinition.org/licenses/cc-by-sa (Creative Commons Attribution-ShareAlike).
+ R1.1 Machine- or human-readable license: The score is 1.000000, confirming the license is easily retrievable.
+ Conclusion
+ The Linked Open Camera (bpr) dataset is highly trustworthy from a technical and accessibility standpoint. It is securely served, provides a clear open license, and makes its data thoroughly available via a SPARQL endpoint and numerous download links.
+ However, users should be cautious regarding its semantic and reputational trustworthiness. The very low verifiability and reputation scores, combined with the confirmed "Ontology Hijacking problem," suggest that while the data is accessible, its quality, semantic accuracy, and authoritativeness may be questionable. It is best suited for users who can perform their own validation or who are primarily interested in the raw data without relying on perfect semantic interoperability.	0,5	?	0,5		0,5						
+TA_1	Is the number of triples of NoiPA retrieved via the SPARQL endpoint always the same?	No, they slightly increase over time.	No, the number of triples for the NoiPA dataset retrieved via the SPARQL endpoint is not always the same. The provided data shows different values at different timestamps:
+ 2025-05-04: 412,894,535
+ 2025-06-01: 419,389,676
+ 2025-07-13: 432,861,574
+ 2025-08-03: 439,796,613
+ 2025-09-07: 446,170,057	1	1	1		1						
+TA_1	The number of triples of NoiPA retrieved via the SPARQL endpoint is constant?	No, they slightly increase over time.	No, the number of triples for the NoiPA dataset retrieved via the SPARQL endpoint is not constant. It has increased over time:
+ 2025-05-04: 412,894,535
+ 2025-06-01: 419,389,676
+ 2025-07-13: 432,861,574
+ 2025-08-03: 439,796,613
+ 2025-09-07: 446,170,057	1	1	1		1						
+TA_2	Is the SPARQL endpoint of DBLP always available?	Yes	Based on the provided data, yes, the SPARQL endpoint for the DBLP Knowledge Graph (dblp-kg) was available on all recorded dates.
+ The "Sparql endpoint" measure for the dblp-kg dataset shows a "measure value: Available" for the following timestamps:
+ 2025-09-07
+ 2025-08-03
+ 2025-07-13
+ 2025-06-01
+ 2025-05-04	1	1	1		1						
+TA_2	Is the DBLP SPARQL endpoint always up?	Yes	Based on the provided data, the DBLP SPARQL endpoint (dataset: dblp-kg) was checked on five separate occasions and was found to be "Available" each time:
+ 2025-09-07
+ 2025-08-03
+ 2025-07-13
+ 2025-06-01
+ 2025-05-04
+ According to this information, it has been consistently online during the monitored period.	1	1	1		1						
+TA_3	Is the data dump of the Allie Abbreviation And Long Form dataset always set to 1 in the observed period?	No, it is discontinuous	No, based on the provided data, the value for the data dump of the Allie Abbreviation And Long Form dataset is not always set to 1.
+ While the measure "Availability of RDF dump (metadata)" has a value of 1.000000 for most of the observed period (2025-05-04, 2025-06-01, 2025-07-13, and 2025-08-03), it changes to 0.000000 on the timestamp 2025-09-07.	1	1	1		1						
+TA_3	Is the data dump of the Allie Abbreviation And Long Form dataset always up?	No, it is discontinuous	
+ Based on the provided data, the data dump for the Allie Abbreviation And Long Form dataset is not always available.
+ Here's the supporting evidence from the file:
+ The measure "Availability for download (metadata)" had a value of 1.000000 (indicating it was available) on multiple dates, including 2025-05-04, 2025-06-01, 2025-07-13, and 2025-08-03.
+ However, on the most recent check dated 2025-09-07, the value for this measure dropped to 0.000000, indicating it was unavailable at that time.
+ The location for the offline dump is listed as: ftp://ftp.dbcls.jp/allie/allie_rdf/allie_rdf_nt_latest.gz.	1	1	1		1						
+TA_4	Is the accuracy of NoiPA constant over time?	No	No, the accuracy score for the NoiPA dataset is not constant over time.
+ Based on the provided data, the accuracy score changed from 0.999700 to 0.999660.
+ Here are the recorded values:
+ 0.999700 on 2025-05-04
+ 0.999700 on 2025-06-01
+ 0.999660 on 2025-07-13
+ 0.999660 on 2025-08-03
+ 0.999660 on 2025-09-07	1	1	1		1						
+TA_4	Does the accuracy of NoiPA remain consistent over time?	No	
+ Based on the data provided, the accuracy score for the NoiPA dataset shows a very slight change over the observed period, but it is largely consistent.
+ Here are the recorded accuracy scores over time:
+ May 4, 2025: 0.999700
+ June 1, 2025: 0.999700
+ July 13, 2025: 0.999660
+ August 3, 2025: 0.999660
+ September 7, 2025: 0.999660
+ The score was stable at 0.999700 in May and June, and then it remained consistent at a slightly lower value of 0.999660 from July to September.	1	1	1		1						
+TA_5	What is the longest continuous period in which the Allie Abbreviation And Long Form dataset data dump has been equals to 1?	91 days	
+ Based on the provided data, the measure "Availability for download (metadata)" for the "allie-abbreviation-and-long-form-database-in-life-science" dataset was equal to 1 from 2025-05-04 to 2025-08-03.
+ The longest continuous period is 92 days.	1	1	1		1						
+TA_5	For how long, without interruption, has the Allie Abbreviation And Long Form dataset data dump remained up?	91 days	
+ Based on the provided data, the Allie Abbreviation And Long Form dataset data dump was available from at least May 4, 2025, through August 3, 2025.
+ The "Availability for download (metadata)" measure shows a value of 1.0 (available) on the following dates:
+ 2025-05-04
+ 2025-06-01
+ 2025-07-13
+ 2025-08-03
+ However, on the next check dated 2025-09-07, the value is 0.0, indicating it was down. Therefore, the data dump was up for a continuous period of 3 months.	0	1	1		1						
+Co_1	Which dataset has the highest number of triples?	DBLP	
+ Based on the provided data, the dblp-kg dataset has the highest number of triples.
+ According to the "Number of triples (query)" measure with the latest timestamp (2025-09-07), it has 1,452,862,425 triples.	1	1	1		1						
+Co_1	Which is the biggest dataset among the compared ones?	DBLP	Based on the provided data, the biggest dataset is the dblp Knowledge Graph (dblp-kg).
+ The most relevant measure for size is the "Number of triples (query)". Comparing the latest available values for this measure:
+ dblp-kg: 1,446,280,845 triples (as of 2025-07-13)
+ NoiPA: 446,170,057 triples (as of 2025-09-07)
+ bpr: 354,148,161 triples (as of 2025-09-07)	1	1	1		1						
+Co_2	Which is the dataset performing worst in the license metric?	CIDOC-CRM	Based on the provided data, the dataset performing worst in the license metric is CIDOC-CRM.
+ It consistently receives a "Licensing score" of 0.000000, which is the lowest possible score (the best value is 1). This indicates a complete lack of retrievable licensing information.	1	1	1		1						
+Co_2	Which is the worst performing dataset in the license metric?	CIDOC-CRM	Based on the provided data, the worst performing dataset in the license metric is CIDOC-CRM.
+ It consistently has a "Licensing score" of 0.000000 across all timestamps, which is the lowest possible score.	1	1	1		1						
+Co_3	What is the mean score for the accuracy dimension?	0.50	Based on the data provided, the mean score for the accuracy dimension is 0.536135.
+	0	0	0		0						
+Co_3	What is the mean value of the accuracy dimension?	0.50	To find the mean value of the accuracy dimension, we first need to identify all the measures associated with it. The metric "Accuracy score" is defined as belonging to the "Accuracy" dimension.
+ By searching the file for all entries with the label "Accuracy score", we find the following 47 measure values:
+ 0.999660 (NoiPA)
+ 0.999660 (NoiPA)
+ 0.999660 (NoiPA)
+ 0.999700 (NoiPA)
+ 0.999700 (NoiPA)
+ 0.000000 (w3c-wordnet)
+ 0.000000 (w3c-wordnet)
+ 0.000000 (w3c-wordnet)
+ 0.000000 (w3c-wordnet)
+ 0.600000 (bpr)
+ 0.000000 (w3c-wordnet)
+ 0.600000 (bpr)
+ 1.000000 (bpr)
+ 1.000000 (bpr)
+ 1.000000 (bpr)
+ 0.000000 (LemmaBank)
+ 0.000000 (LemmaBank)
+ 0.000000 (LemmaBank)
+ 0.000000 (LemmaBank)
+ 0.000000 (LemmaBank)
+ 0.000000 (CIDOC-CRM)
+ 0.000000 (CIDOC-CRM)
+ 0.000000 (CIDOC-CRM)
+ 0.000000 (CIDOC-CRM)
+ 0.000000 (CIDOC-CRM)
+ 1.000000 (dblp-kg)
+ 1.000000 (dblp-kg)
+ 1.000000 (dblp-kg)
+ 1.000000 (dblp-kg)
+ 1.000000 (dblp-kg)
+ 1.000000 (micro-coronavirus)
+ 1.000000 (micro-coronavirus)
+ 0.000000 (bbc-programmes)
+ 1.000000 (micro-coronavirus)
+ 1.000000 (micro-coronavirus)
+ 0.000000 (bbc-programmes)
+ 0.000000 (bbc-programmes)
+ 1.000000 (micro-coronavirus)
+ 0.000000 (bbc-programmes)
+ 1.000000 (allie-abbreviation-and-long-form-database-in-life-science)
+ 1.000000 (allie-abbreviation-and-long-form-database-in-life-science)
+ 1.000000 (allie-abbreviation-and-long-form-database-in-life-science)
+ 1.000000 (allie-abbreviation-and-long-form-database-in-life-science)
+ 0.000000 (allie-abbreviation-and-long-form-database-in-life-science)
+ 0.000000 (bbc-programmes)
+ 0.999987 (environment-agency-bathing-water-quality)
+ 0.999987 (environment-agency-bathing-water-quality)
+ Now, we calculate the sum and the count of these values:
+ Sum: 25.198354
+ Count: 47
+ Finally, we compute the mean:
+ Mean: 25.198354 / 47 = 0.53613519...
+ The mean value of the accuracy dimension is approximately 0.536135.	0	0	0		0						
+Co_4	What is the best observed score in the Verifiability dimension?	0.4983 (NoiPA, Allie, Bathing Water Quality)	Based on the provided data, the best observed score for the Verifiability score is 0.498333.
+ This score was observed for the following datasets:
+ NoiPA
+ allie-abbreviation-and-long-form-database-in-life-science
+ environment-agency-bathing-water-quality	1	1	1		1						
+Co_4	What is the highest observed Verifiability score?	0.4983 (NoiPA, Allie, Bathing Water Quality)	The highest observed Verifiability score is 0.498333.
+ 	1	0,5	0,5		0,5						
+Co_5	What are the highest-performing dimensions in September 2025?	License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability	Based on the data for September 2025, the highest-performing dimensions are those that achieved a perfect score of 1.0.
+ The following dimensions had a maximum score of 1.0:
+ Accuracy: Achieved a score of 1.000000 from the bpr dataset.
+ Currency: Achieved a score of 1.000000 from the bpr dataset.
+ Interpretability: Achieved a score of 1.000000 from the NoiPA dataset.
+ Performance: Achieved a score of 1.000000 from the NoiPA and dblp-kg datasets.
+ Security: Achieved a score of 1.000000 from the bpr dataset.
+ Timeliness: Achieved a Volatility Score of 1.000000 from the NoiPA dataset.	0,5	0,5	0.5	subset	0,5						
+Co_5	What are the dimensions performing better in September 2025?	License, Performance, Accuracy, Believability, Currency, Timeliness, Security, Conciseness and Interpretability	Based on the data for September 2025, several dimensions are performing exceptionally well, with key metrics achieving a perfect or near-perfect score.
+ The dimensions performing the best are:
+ Accessibility: Achieved a perfect score in its Security score metric (1.0).
+ Intrinsic: Reached a perfect Accuracy score of 1.0 and a high Conciseness score of 0.88.
+ Currency: Attained a perfect Currency score of 1.0.
+ Performance: Received a perfect Performance score of 1.0.
+ Representational: Scored perfectly in Interpretability (1.0) and also showed strong performance in Representational-Consistency (0.88).
+ Other dimensions with notable performance include:
+ Trust: The Believability score is high at 0.80.
+ Contextual: The Amount of data score is solid at 0.67.	0	0	0		0						
+E&D_1	Why is the availability score equals to 1 for the DBLP dataset?	Because all the metrics in the availability dimension can be correctly computed	
+ Based on the provided data, the "Availability score" for the DBLP dataset is 1.0 on specific dates (July 13, 2025, and August 3, 2025) because the key metrics that contribute to this score all indicated perfect or positive results at that time.
+ The "Availability score" is defined as an overall score for the availability dimension, computed from individual availability metrics.
+ Let's break down the contributing metrics for the DBLP dataset on July 13, 2025, when the score was 1.0:
+ 1. SPARQL Endpoint Accessibility
+ The primary way to access the data, the SPARQL endpoint, was fully operational.
+ Metric: Sparql endpoint
+ Data Point: {"(Measure) Label: Sparql endpoint":["timestamp: 2025-07-13","measure value: Available","dataset: dblp-kg"]}
+ Meaning: The value "Available" signifies that the SPARQL endpoint was online and responsive.
+ 2. RDF Dump Availability (Verified via Metadata)
+ The system successfully found and verified the RDF data dumps using metadata.
+ Metric: Availability of RDF dump (metadata)
+ Data Point: {"(Measure) Label: Availability of RDF dump (metadata)":["measure value: 1.000000","timestamp: 2025-07-13","dataset: dblp-kg"]}
+ Meaning: A value of 1.0 means "The RDF dump is online."
+ Metric: Availability for download (metadata)
+ Data Point: {"(Measure) Label: Availability for download (metadata)":["measure value: 1.000000","timestamp: 2025-07-13","dataset: dblp-kg"]}
+ Meaning: A value of 1.0 also confirms the RDF dump is online and downloadable.
+ 3. Link Integrity
+ The dataset did not contain any detected inactive links at that time.
+ Metric: Inactive links
+ Data Point: {"(Measure) Label: Inactive links":["timestamp: 2025-07-13","measure value: False","dataset: dblp-kg"]}
+ Meaning: A value of "False" is a positive result, indicating no broken or inactive links were found.
+ Summary of Findings
+ On July 13, 2025, the DBLP dataset demonstrated perfect availability because:
+ Its SPARQL endpoint was online.
+ Its RDF dump was online and verified as downloadable via its metadata.
+ It had no inactive links.
+ These positive results across the key availability metrics were combined to produce the perfect composite score of 1.0.
+ It is worth noting that this score is dynamic. For example, on September 7, 2025, the score dropped to 0.750000, and the Inactive links metric changed to True, indicating a potential reason for the score reduction.	1	1	1		1						
+E&D_1	Why does the DBLP dataset have an availability score of 1?	Because all the metrics in the availability dimension can be correctly computed	
+ Based on the data provided, the DBLP dataset achieved a perfect availability score of 1.0 on specific dates (e.g., 2025-07-13 and 2025-08-03) because it excelled in the primary methods of data access: having both a live SPARQL endpoint and a downloadable data dump.
+ The "Availability score" is a composite metric. Here are the key individual measures from your data that contribute to this high score, using the data from 2025-08-03 as an example:
+ Active SPARQL Endpoint: The dataset has a live, queryable endpoint.
+ (Measure) Label: Sparql endpoint: "measure value: Available"
+ Available Data Dump: The dataset is available for bulk download as an RDF dump, and the metadata correctly points to it.
+ (Measure) Label: Availability of RDF dump (metadata): "measure value: 1.000000" (which means "The RDF dump is online")
+ (Measure) Label: Availability for download (metadata): "measure value: 1.000000"
+ Working Access Points (FAIR Metric): The FAIR accessibility metric A1-D confirms that the dataset has fully operational access points. A score of 1.0 indicates both an operational SPARQL endpoint and an accessible data dump.
+ (Measure) Label: A1-D Working access point(s): "measure value: 1.000000"
+ In summary, on those dates, the DBLP dataset was considered perfectly available because it offered the two main ways to access linked data: direct querying via a SPARQL endpoint and bulk download via an RDF dump.
+ Important Note on Score Fluctuation
+ It is worth noting that the availability score for DBLP is not always 1.0. The data shows it fluctuating over time, dropping to 0.75 on 2025-09-07 and 0.50 on 2025-06-01. This indicates that at times, one of its access methods (like the SPARQL endpoint or the download link) may have been temporarily unavailable or failing health checks during the measurement process.	1	1	1		1						
+E&D_2	Does a score of amount of data equals to 0 mean that the dataset is empty?	No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata.	
+ Based on the provided text, the "Amount of data score" is described as follows:
+ "Overall score for the amount of data dimension computed as a linear combination of the individual amount of data metrics scores","input":"Amount of data metrics scores","output":"[0,1]. Best value: 1."
+ This description indicates that the score is a calculated value between 0 and 1, derived from other metrics like "Number of triples" and "Number of entities". The text does not explicitly state that a score of 0 means the dataset is empty. It only defines 0 as the lowest possible score in its range, with 1 being the best.	0,5	0.5	0,5		0,5						
+E&D_2	If the amount-of-data score is 0, does that mean the dataset contains no data?	No, it means that the amount of data cannot be computed via the SPARQL endpoint and it is not declared in the metadata.	
+ Based on the provided text, an "Amount of data score" of 0 does not necessarily mean the dataset contains no data.
+ Here is the definition from the text:
+ "Amount of data score":{"description":"Overall score for the amount of data dimension computed as a linear combination of the individual amount of data metrics scores","input":"Amount of data metrics scores","output":"[0,1]. Best value: 1.","dimension":"Amount of data"}
+ This description indicates that the score is a calculated value (a "linear combination") based on other metrics, such as:
+ Number of triples
+ Number of entities
+ Number of properties
+ A score of 0 is the lowest possible score on the [0,1] scale, but the text does not specify the exact conditions that lead to a 0. It is an overall score, not a direct count of the data itself.	0,5	0.5	0,5		0,5						
+E&D_3	When the availability score is 1, does it mean that both the SPARQL endpoint and the data dump are working?	Yes	Based on the provided text, an availability score of 1 does not necessarily mean that both the SPARQL endpoint and the data dump are working.
+ Here is the evidence from the file:
+ The definition for "A1-D Working access point(s)" states that a score of 1 is given for an "operational SPARQL or accessible data dump". This suggests that having only one of the two working is sufficient to achieve a top score for that specific metric.
+ There is a concrete example in the data for the dblp-kg dataset on timestamp 2025-08-03:
+ The Availability score is "1.000000".
+ The Sparql endpoint is "Available".
+ The Availability of RDF dump (query) is "False" (meaning the dump is offline).
+ This example demonstrates a case where the overall availability score is 1, but only the SPARQL endpoint is working and the data dump is not.	0	0	0		0						
+E&D_3	if the availability score is 1, does that mean both the SPARQL endpoint and the data dump are up?	Yes	
+ Based on the provided text, an availability score of 1 does not necessarily mean that both the SPARQL endpoint and the data dump are up.
+ The definition for "Availability score" is:
+ "Overall score for the availability dimension computed as a linear combination of the individual availability metrics scores"
+ Looking at the measurements for the dblp-kg dataset on the timestamp 2025-07-13, we can see an example of this:
+ Availability score: 1.000000
+ Sparql endpoint: Available
+ Availability of RDF dump (query): False
+ In this case, the overall availability score is a perfect 1.0, even though the RDF dump is reported as offline (False). This indicates that the "linear combination" used to calculate the score does not require every single availability metric to be perfect to achieve the maximum score.	0	0	0		0						
+E&D_4	if license is set to 1, does it mean that an open license is used?	No, it means that a license is specified	Based on the provided text file, no, a value of 1 for a license metric does not necessarily mean that an open license is used.
+ Here is the specific definition from your file that clarifies this:
+ code
+ JSON
+ {"R1.1 Machine- or human-readable license retrievable via any primary source":{
+     "description":"Any license retrievable",
+     "input":"(Meta)data",
+     "output":"1: license explicitly reported; 0: otherwise",
+     "dimension":"FAIR"
+ }}
+ Explanation:
+ The metric is named "R1.1 Machine- or human-readable license retrievable via any primary source".
+ Its output is defined as "1: license explicitly reported; 0: otherwise".
+ This means a score of 1 simply indicates that the system was able to find and retrieve some form of license information. It measures the presence and accessibility of a license, not its content or openness. The license found could be proprietary, restrictive, or have custom terms.
+ To determine if the license is open, you would need to look at the output of other metrics, such as:
+ (Measure) Label: License machine redeable (metadata)
+ (Measure) Label: License machine redeable (query)
+ These metrics report the actual URL of the license found (e.g., http://www.opendefinition.org/licenses/cc-by-sa), which you can then check to see if it's an open license.	1	0,5	0,5		0,5						
+E&D_4	If license is set to 1, does it mean that an open license is used?	No, it means that a license is specified	
+ Based on the provided text, a value of 1 for the measure "R1.1 Machine- or human-readable license retrievable via any primary source" does not mean that an open license is used.
+ According to its description, the output for this measure is:
+ "1: license explicitly reported; 0: otherwise"
+ This means a value of 1 simply indicates that a license was found and explicitly reported, not that the license itself is an open one. The measure only checks for the presence of a license, not its type or openness.	1	0,5	0,5		0,5						
+E&D_5	If verifiability is set to 1, does it mean that all information about providers are set?	Yes	
+ Based on the provided text, a verifiability score of 1 indicates that the dataset has achieved the best possible value for the metrics that contribute to that score.
+ The Verifiability score is defined as:
+ "Overall score for the verifiability dimension computed as a linear combination of the individual verifiability metrics scores"
+ The individual metrics that have "dimension":"Verifiability" are:
+ Sources: Stating the author, contributors, publisher, and sources.
+ Author (metadata): Stating the author in the metadata.
+ Contributor: Stating the contributors.
+ Publisher: Stating the publisher.
+ Author (query): Stating the author, retrievable via a query.
+ Signed: Checking if the dataset is digitally signed.
+ Therefore, a verifiability score of 1 does not just mean that some provider information is set, but rather that the dataset has successfully met all the criteria for these specific verifiability metrics, resulting in a perfect score. This implies a high degree of transparency regarding the data's origin and providers.	0,5	0.5	0,5		0,5						
+E&D_5	If the verifiability score is 1, does it mean that all provider information is available?	Yes	Based on the provided text, the answer is yes.
+ Here's the reasoning:
+ The Verifiability score is defined as an "Overall score for the verifiability dimension computed as a linear combination of the individual verifiability metrics scores." The best possible value is 1.
+ The text lists several individual metrics that contribute to this score because they fall under the "Verifiability" dimension. These metrics specifically check for provider information:
+ Sources: Checks for the author, contributors, publisher, and sources.
+ Author (query): Checks for the author via a SPARQL endpoint.
+ Author (metadata): Checks for the author in metadata.
+ Contributor: Checks for contributors.
+ Publisher: Checks for the publisher.
+ Since the overall score is a combination of these individual metrics, achieving the best possible score of 1 implies that the underlying metrics also achieved their best possible values, meaning that the provider information they check for is available.	1	1	1		1						
+														
+														
+														
+														
+														
+Total	Total (A1)	Total (A2)	IR (All)	IR (A1)	IR (A2)	TA (All)	TA (A1)	TA (A2)	Co (All)	Co (A1)	Co (A2)	E&D (All)	E&D (A1)	E&D (A2)
+0,775	0,8	0,75	0,95	1	0,9	1	1	1	0,6	0,7	0,5	0,55	0,5	0,6
